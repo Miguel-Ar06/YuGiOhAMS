@@ -26,3 +26,6 @@ C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AM
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.csproj.AssemblyReference.cache
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh.9E52D5FC.Up2Date
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu_Gi_Oh_AMS.Juego.resources
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.sourcelink.json
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Resources\Yu Gi Oh! Japanese OST Yugi's Theme.wav
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Resources\Yu-Gi-Oh! GX Duel Academy - Main Screen.wav

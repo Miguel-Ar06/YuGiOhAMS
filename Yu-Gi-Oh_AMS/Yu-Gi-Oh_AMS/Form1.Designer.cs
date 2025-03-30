@@ -30,10 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelFondoMenu = new Panel();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             botonJugar = new Button();
             label1 = new Label();
             logoMenu = new PictureBox();
             panelFondoMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoMenu).BeginInit();
             SuspendLayout();
             // 
@@ -43,6 +47,8 @@
             panelFondoMenu.BackColor = Color.Transparent;
             panelFondoMenu.BackgroundImage = (Image)resources.GetObject("panelFondoMenu.BackgroundImage");
             panelFondoMenu.BackgroundImageLayout = ImageLayout.Stretch;
+            panelFondoMenu.Controls.Add(pictureBox2);
+            panelFondoMenu.Controls.Add(pictureBox1);
             panelFondoMenu.Controls.Add(botonJugar);
             panelFondoMenu.Controls.Add(label1);
             panelFondoMenu.Controls.Add(logoMenu);
@@ -51,14 +57,35 @@
             panelFondoMenu.Size = new Size(1172, 688);
             panelFondoMenu.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-17, 209);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(389, 540);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(715, 199);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(457, 573);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
             // botonJugar
             // 
-            botonJugar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            botonJugar.Anchor = AnchorStyles.Bottom;
             botonJugar.BackColor = Color.Tomato;
             botonJugar.BackgroundImageLayout = ImageLayout.None;
             botonJugar.FlatStyle = FlatStyle.Flat;
             botonJugar.Font = new Font("Nasalization", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            botonJugar.Location = new Point(505, 375);
+            botonJugar.Location = new Point(505, 323);
             botonJugar.Name = "botonJugar";
             botonJugar.Size = new Size(174, 44);
             botonJugar.TabIndex = 3;
@@ -96,11 +123,14 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1166, 677);
             Controls.Add(panelFondoMenu);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             panelFondoMenu.ResumeLayout(false);
             panelFondoMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoMenu).EndInit();
             ResumeLayout(false);
         }
@@ -110,7 +140,7 @@
         private PictureBox logoMenu;
         private Label label1;
         private Button botonJugar;
-
-        
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

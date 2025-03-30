@@ -32,6 +32,16 @@
 
   <ItemGroup>
     <Folder Include="Cartas\Res\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Yu Gi Oh! Japanese OST Yugi%27s Theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Yu-Gi-Oh! GX Duel Academy - Main Screen.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

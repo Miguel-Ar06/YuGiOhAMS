@@ -32,8 +32,10 @@ namespace Yu_Gi_Oh_AMS.Cartas
         public string atributo { get; set; }
         public string tipoMonstruo { get; set; }
         public bool enModoAtaque { get; set; } // (1 = ataque, 0 = defensa)
+        public bool esPenetrante { get; set; }
 
-        Monstruo(int ataque, int defensa, string atributo, string tipo_monstruo, string nombre, string descripcion, string tipo, Color color, string imagen)
+
+        Monstruo(int ataque, int defensa, string atributo, string tipo_monstruo, string nombre, string descripcion, string tipo, bool esPenetrante, Color color, string imagen)
         {
             this.ataque = ataque;
             this.defensa = defensa;
@@ -50,11 +52,17 @@ namespace Yu_Gi_Oh_AMS.Cartas
             enMano = false;
             enMazo = false;
             activada = false;
+            this.esPenetrante = esPenetrante;
             this.imagen = imagen;
         }
 
         public int atacar (Monstruo objetivo)
         {
+            if (esPenetrante)
+            {
+                return ataque;
+            }
+
             int diferencia;
 
             if (objetivo.enModoAtaque)

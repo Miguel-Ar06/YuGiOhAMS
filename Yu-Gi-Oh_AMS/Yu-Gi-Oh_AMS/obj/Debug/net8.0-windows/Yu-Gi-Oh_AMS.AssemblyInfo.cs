@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yu-Gi-Oh_AMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b39381447ea8793e75100ce9dd8430c63193369")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5dffad62b98d59f4dbf37f452f8785d1edd4720")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yu-Gi-Oh_AMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yu-Gi-Oh_AMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

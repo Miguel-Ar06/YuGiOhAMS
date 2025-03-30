@@ -180,12 +180,12 @@ namespace Yu_Gi_Oh_AMS
         }
     }
 
-    internal unsafe class ListaDble<T> where T : class
+    internal unsafe class ListaDoble<T> where T : class
     {
         public NodoDoble<T>* cabeza { get; set; }
         public NodoDoble<T>* cola { get; set; }
         public int tamano { get; set; }
-        public ListaDble()
+        public ListaDoble()
         {
             cabeza = null;
             cola = null;
@@ -207,6 +207,52 @@ namespace Yu_Gi_Oh_AMS
                 cola->siguiente = nuevoNodo;
                 nuevoNodo->anterior = cola;
                 cola = nuevoNodo;
+            }
+
+            tamano++;
+            indexar();
+        }
+        public void agregarEnPosicion(T dato, int posicion)
+        {
+            NodoDoble<T>* nuevoNodo = (NodoDoble<T>*)Marshal.AllocHGlobal(sizeof(NodoDoble<T>));
+            nuevoNodo->dato = dato;
+            nuevoNodo->anterior = null;
+            nuevoNodo->siguiente = null;
+
+            if (cabeza == null)
+            {
+                cabeza = nuevoNodo;
+                cola = nuevoNodo;
+            }
+            else
+            {
+                NodoDoble<T>* actual = cabeza;
+                NodoDoble<T>* anterior = null;
+                int indice = 0;
+
+                while (actual != null)
+                {
+                    if (indice == posicion)
+                    {
+                        if (anterior == null)
+                        {
+                            nuevoNodo->siguiente = actual;
+                            actual->anterior = nuevoNodo;
+                            cabeza = nuevoNodo;
+                        }
+                        else
+                        {
+                            anterior->siguiente = nuevoNodo;
+                            nuevoNodo->anterior = anterior;
+                            nuevoNodo->siguiente = actual;
+                            actual->anterior = nuevoNodo;
+                        }
+                        break;
+                    }
+                    anterior = actual;
+                    actual = actual->siguiente;
+                    indice++;
+                }
             }
 
             tamano++;
@@ -299,7 +345,6 @@ namespace Yu_Gi_Oh_AMS
             }
             return null;
         }
-
         public int obtenerIndicePorDato(T dato)
         {
             NodoDoble<T>* actual = cabeza;
@@ -314,7 +359,38 @@ namespace Yu_Gi_Oh_AMS
             }
             return -1;
         }
+        public void revolver()
+        {
+            Random random = new Random();
+            NodoDoble<T>* actual = cabeza;
+            NodoDoble<T>* auxiliar = null;
+            T datoAuxiliar;
+            int indiceAuxiliar;
 
+            while (actual != null)
+            {
+                auxiliar = cabeza;
+
+                // nos vamos a una posicion x
+                for (int i = 0; i < random.Next(0, tamano); i++)
+                {
+                    auxiliar = auxiliar->siguiente;
+                }
+
+                // intercambiamos los datos
+                datoAuxiliar = actual->dato;
+                indiceAuxiliar = actual->indice;
+                actual->dato = auxiliar->dato;
+                actual->indice = auxiliar->indice;
+                auxiliar->dato = datoAuxiliar;
+                auxiliar->indice = indiceAuxiliar;
+
+                // avanzar a a siguiente carta
+                actual = actual->siguiente;
+            }
+
+            indexar();
+        }
     }
 
     #endregion
@@ -437,6 +513,82 @@ namespace Yu_Gi_Oh_AMS
             indexar();
             return null;
         }
+
+        public void insertarEnPosicion(T dato, int indice)
+        {
+            Nodo<T>* nuevoNodo = (Nodo<T>*)Marshal.AllocHGlobal(sizeof(Nodo<T>));
+            nuevoNodo->dato = dato;
+            nuevoNodo->siguiente = null;
+
+            if (cima == null)
+            {
+                cima = nuevoNodo;
+                fondo = nuevoNodo;
+            }
+            else
+            {
+                Nodo<T>* actual = cima;
+                Nodo<T>* anterior = null;
+
+                while (actual != null)
+                {
+                    if (actual->indice == indice)
+                    {
+                        if (anterior == null)
+                        {
+                            nuevoNodo->siguiente = actual;
+                            cima = nuevoNodo;
+                        }
+                        else
+                        {
+                            anterior->siguiente = nuevoNodo;
+                            nuevoNodo->siguiente = actual;
+                        }
+
+                        tamano++;
+                        indexar();
+                        break;
+                    }
+
+                    anterior = actual;
+                    actual = actual->siguiente;
+                }
+            }
+        }
+
+        public void revolver()
+        {
+            Random random = new Random();
+            Nodo<T>* actual = cima;
+            Nodo<T>* auxiliar = null;
+            T datoAuxiliar;
+            int indiceAuxiliar;
+
+            while (actual != null)
+            {
+                auxiliar = cima;
+
+                // nos vamos a una posicion x
+                for (int i = 0; i < random.Next(0, tamano); i++)
+                {
+                    auxiliar = auxiliar->siguiente;
+                }
+
+                // intercambiamos los datos
+                datoAuxiliar = actual->dato;
+                indiceAuxiliar = actual->indice;
+
+                actual->dato = auxiliar->dato;
+                actual->indice = auxiliar->indice;
+
+                auxiliar->dato = datoAuxiliar;
+                auxiliar->indice = indiceAuxiliar;
+
+                // avanzar a a siguiente carta
+                actual = actual->siguiente;
+            }
+            indexar();
+        }
     }
 
     #endregion
@@ -528,7 +680,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public T extraer(int indice)
+        public T extraerPorIndice(int indice)
         {
             Nodo<T>* actual = frente;
             Nodo<T>* anterior = null;
@@ -551,6 +703,36 @@ namespace Yu_Gi_Oh_AMS
                 anterior = actual;
                 actual = actual->siguiente;
             }
+
+            indexar();
+            return null;
+        }
+
+        public T extraerPorDato(T dato)
+        {
+            Nodo<T>* actual = frente;
+            Nodo<T>* anterior = null;
+
+            while (actual != null)
+            {
+                if (actual->dato == dato)
+                {
+                    if (anterior == null)
+                    {
+                        frente = actual->siguiente;
+                    }
+                    else
+                    {
+                        anterior->siguiente = actual->siguiente;
+                    }
+                    tamano--;
+                    return actual->dato;
+                }
+
+                anterior = actual;
+                actual = actual->siguiente;
+            }
+
 
             indexar();
             return null;

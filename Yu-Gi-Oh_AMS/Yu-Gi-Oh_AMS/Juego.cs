@@ -27,7 +27,12 @@ namespace Yu_Gi_Oh_AMS
         o menu principal
         o pantalla de juego
         o musica (de eso me encargo yo)
-
+        o clase jugador con vida, nombre, mano, coleccion, cementerio, campo etc etc
+            o clase campo (que en realidad tienen funcionalidades de listas pero andres pide colas)
+                o instancia "mano" de lista doble
+                o instancia "mazo" de pila
+                o instancia "campoJ1" y "campoJ2" de cola
+                o instancia "cementerio" de lista
         
         (nota, todas las EDD son del tipo generico <T> para poder usarlas con el dato que nos de la gana, 
         y todos los nodos tienen indice para jorungarlos a gusto durante el juego, 
@@ -35,21 +40,11 @@ namespace Yu_Gi_Oh_AMS
         
         x clases individuales de cada carta
         x clase EstadoDelJuego (con bools para las fases y asi)
-        x instancia "mano" de lista doble
-        x instancia "coleccion" de pila
-        x instancia "campoJ1" y "campoJ2" de cola
-        x instancia "cementerio" de lista
         x manejo de turnos del juego en el main
-        x clase campoDelJugador con 2 colas (que en realidad tienen funcionalidades de listas pero andres pide colas)
-        x clase jugador con vida, nombre, mano, coleccion, cementerio, campo etc etc
         x manejo de dano con los metodos "atacar" (o efecto) de cada carta
         x implementar los efectos de todas las cartas
         x efectos en la interfaz para visualizar quien ataca a quien (me encargo yo)
-        x una forma mejor de manejar la mano en la interfaz, 
-            porque puse 6 picturebox para la mano pero el jugador puede tener mas de 6 cartas 
-            en ciertos momentos del turno entonces tengo que ver como manejarlo, 
-            tengo pensado con un combobox que albergue las cartas adicionales y al final del turno 
-            ese combobox se vacia y solo queden las de la mano
+        x crear un bindginList para las cartas de cada jugador y asociarlas al datagrid de la mano de cada jugador
         x los turnos se manejan mostrando las cartas de uno y esocndiendo las del otro y al momento de cambiar de turno se muestra un
             mensaje y se cambia algun color o no se, o simplemente mostramos todas la cartas de todos d=todo el tiempo y ya
      */

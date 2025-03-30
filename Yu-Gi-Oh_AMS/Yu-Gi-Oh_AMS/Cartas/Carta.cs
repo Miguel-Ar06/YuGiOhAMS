@@ -9,19 +9,20 @@ namespace Yu_Gi_Oh_AMS.Cartas
 {
     internal class Carta
     {
-        protected string nombre;
-        protected string descripcion;
-        protected string tipo;
-        protected Color color;
-        protected bool enMano;
-        protected bool enCampo;
-        protected bool enCementerio;
-        protected bool enMazo;
-        protected bool activada;
-        protected bool volteada;
+        protected int id;
 
-        protected string imagenReverso;
-        protected string imagen;
+        public string nombre {get; set;}
+        public string descripcion {get; set;}
+        public string tipo {get; set;}
+        public Color color {get; set;}
+        public bool enMano {get; set;}
+        public bool enCampo {get; set;}
+        public bool enCementerio {get; set;}
+        public bool enMazo {get; set;}
+        public bool activada {get; set;}
+        public bool volteada {get; set;}
+        public string imagenReverso {get; set;}
+        public string imagen { get; set; }
     }
 
     internal class Monstruo : Carta

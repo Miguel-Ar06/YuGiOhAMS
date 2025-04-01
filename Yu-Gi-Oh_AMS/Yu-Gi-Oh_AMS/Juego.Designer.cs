@@ -79,6 +79,8 @@
             jugador2Mano = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            labelMazoJugador1 = new Label();
+            labelMazoJugador2 = new Label();
             ((System.ComponentModel.ISupportInitialize)cartaSeleccionadaZoom).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1HT3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Monstruo3).BeginInit();
@@ -632,11 +634,37 @@
             dataGridViewTextBoxColumn2.Resizable = DataGridViewTriState.False;
             dataGridViewTextBoxColumn2.Width = 75;
             // 
+            // labelMazoJugador1
+            // 
+            labelMazoJugador1.AutoSize = true;
+            labelMazoJugador1.BackColor = SystemColors.ActiveCaptionText;
+            labelMazoJugador1.BorderStyle = BorderStyle.FixedSingle;
+            labelMazoJugador1.ForeColor = SystemColors.ButtonHighlight;
+            labelMazoJugador1.Location = new Point(927, 450);
+            labelMazoJugador1.Name = "labelMazoJugador1";
+            labelMazoJugador1.Size = new Size(27, 22);
+            labelMazoJugador1.TabIndex = 58;
+            labelMazoJugador1.Text = "00";
+            // 
+            // labelMazoJugador2
+            // 
+            labelMazoJugador2.AutoSize = true;
+            labelMazoJugador2.BackColor = SystemColors.ActiveCaptionText;
+            labelMazoJugador2.BorderStyle = BorderStyle.FixedSingle;
+            labelMazoJugador2.ForeColor = SystemColors.ButtonHighlight;
+            labelMazoJugador2.Location = new Point(413, 186);
+            labelMazoJugador2.Name = "labelMazoJugador2";
+            labelMazoJugador2.Size = new Size(27, 22);
+            labelMazoJugador2.TabIndex = 59;
+            labelMazoJugador2.Text = "00";
+            // 
             // Juego
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 666);
+            Controls.Add(labelMazoJugador2);
+            Controls.Add(labelMazoJugador1);
             Controls.Add(jugador2Mano);
             Controls.Add(jugador1Mano);
             Controls.Add(labelEP);
@@ -776,5 +804,7 @@
         private DataGridView jugador2Mano;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private Label labelMazoJugador1;
+        private Label labelMazoJugador2;
     }
 }

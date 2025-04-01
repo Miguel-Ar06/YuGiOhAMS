@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -75,34 +75,7 @@
               "ViewState": "AgIAAJkAAAAAAAAAAAAmwLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T06:10:47.421Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Monstruos.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAA6wHoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T15:38:18.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Magicas.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
-              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
-              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:18:40.227Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -122,6 +95,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Monstruos.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA6wHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:38:18.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Magicas.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:18:40.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "EstadoDelJuego.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
@@ -130,8 +128,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T22:36:53.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T22:36:53.97Z"
             },
             {
               "$type": "Document",
@@ -143,8 +140,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Campo.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAiwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:48:41.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:48:41.252Z"
             },
             {
               "$type": "Document",
@@ -156,8 +152,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Jugador.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAqwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:48:16.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:48:16.89Z"
             },
             {
               "$type": "Document",
@@ -169,8 +164,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Estructuras.cs",
               "ViewState": "AgIAAMQCAAAAAAAAAAAAAOUCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T06:40:40.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T06:40:40.053Z"
             },
             {
               "$type": "Document",

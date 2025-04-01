@@ -14,17 +14,22 @@ namespace Yu_Gi_Oh_AMS
         public int lifePoints { get; set; }
         public int cartasEnMano { get; set; }
 
+        public bool esTurno { get; set; }
+
+        public bool puedeInvocar { get; set; }
+
         public ListaDoble<Carta> mano = new ListaDoble<Carta>();
         public Campo campo = new Campo();
         public ListaDoble<Carta> cementerio = new ListaDoble<Carta>();
         public Pila<Carta> mazo = new Pila<Carta>();
 
-        public Jugador(int numero, string nombre)
+        public Jugador(int numero, string nombre, bool esTurno)
         {
             this.numero = numero;
             this.nombre = nombre;
             lifePoints = 8000;
             cartasEnMano = 0;
+            this.esTurno = esTurno;
         }
 
         public void robarCarta()
@@ -39,6 +44,7 @@ namespace Yu_Gi_Oh_AMS
             if (carta is Monstruo)
             {
                 campo.agregarMonstruo((Monstruo)carta);
+                this.puedeInvocar = false;
             }
             else if (carta is Hechizo)
             {

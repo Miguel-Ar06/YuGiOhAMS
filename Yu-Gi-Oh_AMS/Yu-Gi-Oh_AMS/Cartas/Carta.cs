@@ -7,44 +7,44 @@ using NAudio.CoreAudioApi;
 
 namespace Yu_Gi_Oh_AMS.Cartas
 {
+    
+
     internal class Carta
     {
-        protected int id;
-
-        public string nombre {get; set;}
-        public string descripcion {get; set;}
-        public string tipo {get; set;}
-        public Color color {get; set;}
-        public bool enMano {get; set;}
-        public bool enCampo {get; set;}
-        public bool enCementerio {get; set;}
-        public bool enMazo {get; set;}
-        public bool activada {get; set;}
-        public bool volteada {get; set;}
-        public string imagenReverso {get; set;}
+        public string nombre { get; set; }
+        public string descripcion { get; set; }
+        public Color color { get; set; }
+        public string tipo { get; set; }
+        public bool enMano { get; set; }
+        public bool enCampo { get; set; }
+        public bool enCementerio { get; set; }
+        public bool enMazo { get; set; }
+        public bool activada { get; set; }
+        public bool volteada { get; set; }
+        public string imagenReverso { get; set; }
         public string imagen { get; set; }
+
+        public virtual void ActivarEfecto(Jugador jugador, Jugador oponente) { }
     }
 
     internal class Monstruo : Carta
     {
         public int ataque { get; set; }
         public int defensa { get; set; }
-        // public int nivel { get; set; }
-        public string atributo { get; set; }
-        public string tipoMonstruo { get; set; }
+
+        public bool puedeAtacar { get; set;}
+
         public bool enModoAtaque { get; set; } // (1 = ataque, 0 = defensa)
         public bool esPenetrante { get; set; }
 
 
-        Monstruo(int ataque, int defensa, string atributo, string tipo_monstruo, string nombre, string descripcion, string tipo, bool esPenetrante, Color color, string imagen)
+        public Monstruo(int ataque, int defensa,  string nombre, string descripcion, Color color, string imagen)
         {
             this.ataque = ataque;
             this.defensa = defensa;
-            this.atributo = atributo;
-            this.tipoMonstruo = tipo_monstruo;
             this.nombre = nombre;
             this.descripcion = descripcion;
-            this.tipo = tipo;
+            this.tipo = "Monstruo";
             this.color = color;
             volteada = false;
             enModoAtaque = true;
@@ -53,60 +53,86 @@ namespace Yu_Gi_Oh_AMS.Cartas
             enMano = false;
             enMazo = false;
             activada = false;
-            this.esPenetrante = esPenetrante;
+            this.esPenetrante = false;
             this.imagen = imagen;
         }
 
-        public int atacar (Monstruo objetivo)
+        public void atacar (Monstruo objetivo, Jugador jugador, Jugador Oponente )
         {
-            if (esPenetrante)
-            {
-                return ataque;
-            }
-
             int diferencia;
 
+            
+
+            if (esPenetrante && !objetivo.enModoAtaque)
+            {
+                puedeAtacar = false;
+                diferencia = ataque - objetivo.defensa;
+                if (diferencia > 0)
+                {
+                    Oponente.recibirDanio(diferencia);
+                    objetivo.enCementerio = true;
+                    return;
+                }
+                else if (diferencia == 0)
+                {
+                    return;
+                }
+                else
+                {
+                    jugador.recibirDanio((-1) * diferencia);
+                    return;
+                }
+            }
+
+           
             if (objetivo.enModoAtaque)
             {
                 diferencia = ataque - objetivo.ataque;
+                puedeAtacar = false;
 
                 if (diferencia > 0)
                 {
                     objetivo.enCementerio = true;
-                    return diferencia;
+                    Oponente.recibirDanio(diferencia);
+                    return;
                 }
                 else if (diferencia < 0)
                 {
                     enCementerio = true;
-                    return diferencia;
+                    jugador.recibirDanio((-1) * diferencia);
+                    return;
                 }
                 else
                 {
                     enCementerio = true;
                     objetivo.enCementerio = true;
-                    return 0;
+                    return;
                 }
             }
             else
             {
+                puedeAtacar = false;
                 diferencia = ataque - objetivo.defensa;
 
                 if (diferencia > 0)
                 {
                     objetivo.enCementerio = true;
-                    return diferencia;
+                    return;
                 }
                 else if (diferencia < 0)
                 {
-                    return diferencia;
+                    jugador.recibirDanio((-1) * diferencia);
+                    return;
                 }
                 else
                 {
                     objetivo.enCementerio = true;
-                    return 0;
+                    return ;
                 }
             }
         }
+
+        public virtual void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo objetivo) { }
     }
 
     internal class Hechizo : Carta

@@ -11,29 +11,63 @@ namespace Yu_Gi_Oh_AMS
 
     internal unsafe class Nodo<T> where T : class
     {
-        public T dato { get; set; }
-        public Nodo<T>* siguiente { get; set; }
-        public int indice { get; set; }
+        private T Dato;
+        public T dato 
+        { 
+            get { return Dato; } 
+            set { Dato = value; } 
+        }
+
+        private Nodo<T>* Siguiente; 
+        public Nodo<T>* siguiente 
+        {
+            get { return Siguiente; }
+            set { Siguiente = value; } 
+        }
+
+
+        private int Indice; 
+        public int indice
+        {
+            get {return Indice;}
+            set {Indice = value;} 
+        }
 
         public Nodo(T dato)
         {
-            this.dato = dato;
-            this.indice = 0;
-            this.siguiente = null;
+            this.Dato = dato;
+            this.Indice = 0;
+            this.Siguiente = null;
         }
     }
 
     internal unsafe class ListaSimple<T> where T : class
     {
-        public Nodo<T>* cabeza { get; set; }
-        public Nodo<T>* cola { get; set; }
+        private Nodo<T>* Cabeza;
+        public Nodo<T>* cabeza
+        {
+            get { return Cabeza; }
+            set { Cabeza = value; }
+        }
 
-        public int tamano { get; set; }
+        private Nodo<T>* Cola;
+        public Nodo<T>* cola 
+        {
+            get { return Cola; }
+            set { Cola = value; }
+        }
+
+        private int Tamano; 
+        public int tamano 
+        {
+            get { return Tamano; }
+            set { Tamano = value; }
+        }
 
         public ListaSimple()
         {
-            cabeza = null;
-            cola = null;
+            Cabeza = null;
+            Cola = null;
         }
 
         public void agregar(T dato)
@@ -166,29 +200,70 @@ namespace Yu_Gi_Oh_AMS
 
     internal unsafe class NodoDoble<T> where T : class
     {
-        public T dato { get; set; }
-        public NodoDoble<T>* anterior { get; set; }
-        public NodoDoble<T>* siguiente { get; set; }
-        public int indice { get; set; }
+        private T Dato; 
+        public T dato 
+        {
+            get { return Dato; }
+            set { Dato = value; }
+        }
+
+        private NodoDoble<T>* Anterior;
+        public NodoDoble<T>* anterior
+        {
+            get { return Anterior; }
+            set { Anterior = value; }
+        }
+
+        private NodoDoble<T>* Siguiente;
+        public NodoDoble<T>* siguiente
+        {
+            get { return Siguiente; }
+            set { Siguiente = value; }
+        }
+
+        private int Indice;
+        public int indice
+        {
+            get { return Indice; }
+            set { Indice = value; }
+        }
 
         public NodoDoble(T dato)
         {
-            this.dato = dato;
-            this.anterior = null;
-            this.siguiente = null;
-            indice = 0;
+            this.Dato = dato;
+            this.Anterior = null;
+            this.Siguiente = null;
+            Indice = 0;
         }
     }
 
     internal unsafe class ListaDoble<T> where T : class
     {
-        public NodoDoble<T>* cabeza { get; set; }
-        public NodoDoble<T>* cola { get; set; }
-        public int tamano { get; set; }
+        private NodoDoble<T>* Cabeza; 
+        public NodoDoble<T>* cabeza
+        {
+            get { return Cabeza; }
+            set { Cabeza = value; }
+        }
+
+        private NodoDoble<T>* Cola;
+        public NodoDoble<T>* cola
+        {
+            get { return Cola; }
+            set { Cola = value; }
+        }
+
+        private int Tamano;
+        public int tamano 
+        {
+            get { return Tamano; }
+            set { Tamano = value; }
+        }
+
         public ListaDoble()
         {
-            cabeza = null;
-            cola = null;
+            Cabeza = null;
+            Cola = null;
         }
         public void agregar(T dato)
         {

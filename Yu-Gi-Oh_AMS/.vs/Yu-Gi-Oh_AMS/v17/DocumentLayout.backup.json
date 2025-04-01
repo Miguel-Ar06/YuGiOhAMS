@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\nombr\\onedrive\\documentos\\code\\tarea\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T22:36:53.97Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Campo.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wCIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:48:41.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:48:41.252Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Jugador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:48:16.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T21:48:16.89Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Estructuras.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0BAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T06:40:40.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T06:40:40.053Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Carta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T06:10:47.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T06:10:47.421Z"
             },
             {
               "$type": "Document",
@@ -152,8 +148,7 @@
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Juego.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:22:44.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T00:22:44.469Z"
             },
             {
               "$type": "Document",
@@ -189,8 +184,7 @@
               "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Juego.cs [Design]",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Juego.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T00:17:46.778Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-29T00:17:46.778Z"
             },
             {
               "$type": "Bookmark",

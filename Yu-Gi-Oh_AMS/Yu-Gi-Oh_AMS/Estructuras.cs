@@ -473,14 +473,31 @@ namespace Yu_Gi_Oh_AMS
     #region Pila
     internal unsafe class Pila<T> where T : class
     {
-        public Nodo<T>* cima { get; set; }
-        public Nodo<T>* fondo { get; set; }
-        public int tamano { get; set; }
+        private Nodo<T>* Cima; 
+        public Nodo<T>* cima 
+        {
+            get { return Cima; }
+            set { Cima = value; }
+        }
+
+        private Nodo<T>* Fondo; 
+        public Nodo<T>* fondo
+        {
+            get { return Fondo; }
+            set { Fondo = value; }
+        }
+
+        private int Tamano; 
+        public int tamano 
+        { 
+            get; 
+            set; 
+        }
         public Pila()
         {
-            cima = null;
-            fondo = null;
-            tamano = 0;
+            Cima = null;
+            Fondo = null;
+            Tamano = 0;
         }
 
         public void indexar()
@@ -671,15 +688,32 @@ namespace Yu_Gi_Oh_AMS
     #region cola
     internal unsafe class Cola<T> where T : class
     {
-        public int tamano { get; set; }
-        public Nodo<T>* frente { get; set; }
-        public Nodo<T>* final { get; set; }
+        private int Tamano; 
+        public int tamano
+        {
+            get { return Tamano; }
+            set { Tamano = value; }
+        }
+
+        private Nodo<T>* Frente; 
+        public Nodo<T>* frente
+        {
+            get { return Frente; }
+            set { Frente = value; }
+        }
+
+        private Nodo<T>* Final;
+        public Nodo<T>* final
+        {
+            get { return Final; }
+            set { Final = value; }
+        }
 
         public Cola()
         {
-            tamano = 0;
-            frente = null;
-            final = null;
+            Tamano = 0;
+            Frente = null;
+            Final = null;
         }
 
         public void indexar()

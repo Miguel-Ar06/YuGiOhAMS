@@ -29,6 +29,15 @@ namespace Yu_Gi_Oh_AMS
             trampasEnCampo = 0;
         }
 
+        public int contarMonstruos()
+        {
+            return monstruosEnCampo;
+        }
+
+        public int contarZonaMagicas()
+        {
+            return (trampasEnCampo + hechizosEnCampo);
+        }
         public void agregarMonstruo(Monstruo monstruo)
         {
             monstruos.encolar(monstruo);

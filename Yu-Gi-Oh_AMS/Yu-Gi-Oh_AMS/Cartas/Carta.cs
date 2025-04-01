@@ -247,37 +247,13 @@ namespace Yu_Gi_Oh_AMS.Cartas
 
     internal class Hechizo : Carta
     {
-<<<<<<< HEAD
-        
-=======
-        protected string Efecto;
-        public string efecto
-        {
-            get { return Efecto; }
-            set { Efecto = value; }
-        }
->>>>>>> 2eead605d65528614d9b13e9fcb1b7cf9d54b086
         // int duracion;
 
         public Hechizo ( string nombre, string descripcion, Color color, string imagen)
         {
-<<<<<<< HEAD
-            this.nombre = nombre;
-            this.descripcion = descripcion;
-            this.tipo = "Magia";
-            this.color = color;
-            volteada = false;
-            enCampo = false;
-            enCementerio = false;
-            enMano = false;
-            enMazo = false;
-            activada = false;
-            this.imagen = imagen;
-=======
-            this.Efecto = efecto;
             this.Nombre = nombre;
             this.Descripcion = descripcion;
-            this.Tipo = tipo;
+            this.Tipo = "Magia";
             this.Color = color;
             Volteada = false;
             EnCampo = false;
@@ -286,7 +262,6 @@ namespace Yu_Gi_Oh_AMS.Cartas
             EnMazo = false;
             Activada = false;
             this.Imagen = imagen;
->>>>>>> 2eead605d65528614d9b13e9fcb1b7cf9d54b086
         }
 
         public virtual void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo monstruo)
@@ -297,18 +272,9 @@ namespace Yu_Gi_Oh_AMS.Cartas
 
     internal class Trampa : Carta
     {
-        protected string Efecto; 
-        public string efecto 
-        {
-            get { return Efecto; }
-            set { Efecto = value; }
-        }
-
         // int duracion;
-
-        public Trampa(string efecto, string nombre, string descripcion, string tipo, Color color, string imagen)
+        public Trampa(string nombre, string descripcion, string tipo, Color color, string imagen)
         {
-            this.Efecto = efecto;
             this.Nombre = nombre;
             this.Descripcion = descripcion;
             this.Tipo = tipo;

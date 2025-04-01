@@ -137,15 +137,14 @@ namespace Yu_Gi_Oh_AMS.Cartas
 
     internal class Hechizo : Carta
     {
-        public string efecto { get; set; }
+        
         // int duracion;
 
-        public Hechizo (string efecto, string nombre, string descripcion, string tipo, Color color, string imagen)
+        public Hechizo ( string nombre, string descripcion, Color color, string imagen)
         {
-            this.efecto = efecto;
             this.nombre = nombre;
             this.descripcion = descripcion;
-            this.tipo = tipo;
+            this.tipo = "Magia";
             this.color = color;
             volteada = false;
             enCampo = false;
@@ -154,6 +153,11 @@ namespace Yu_Gi_Oh_AMS.Cartas
             enMazo = false;
             activada = false;
             this.imagen = imagen;
+        }
+
+        public virtual void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo monstruo)
+        {
+
         }
     }
 

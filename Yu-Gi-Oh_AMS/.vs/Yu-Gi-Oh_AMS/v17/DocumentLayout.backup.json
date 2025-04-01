@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\cartas\\monstruos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\monstruos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\cartas\\magicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\magicas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\estadodeljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\estadodeljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\cartas\\monstruos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\monstruos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\campo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\campo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\cartas\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\cartas\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\cartas\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\estructuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\estructuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\juego.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\juego.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\estadodeljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\estadodeljuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\estructuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\estructuras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|c:\\users\\angel\\desktop\\final boss\\yugiohams\\yu-gi-oh_ams\\yu-gi-oh_ams\\juego.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|solutionrelative:yu-gi-oh_ams\\juego.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0F60C77-F08A-42BD-8E94-01D6F1D0CB39}|Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS.csproj|C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\yu-gi-oh_ams\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,20 +62,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Carta.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Carta.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Carta.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Carta.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Carta.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwD8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAmwLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T06:10:47.421Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Monstruos.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA6wHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T15:38:18.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Magicas.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Magicas.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:18:40.227Z",
               "EditorCaption": ""
             },
             {
@@ -92,26 +122,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Monstruos.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "RelativeToolTip": "Yu-Gi-Oh_AMS\\Cartas\\Monstruos.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwC8AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T15:38:18.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "EstadoDelJuego.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\EstadoDelJuego.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T22:36:53.97Z",
               "EditorCaption": ""
@@ -124,35 +141,36 @@
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Campo.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Campo.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Campo.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADgvyYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:48:41.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Jugador.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Jugador.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Jugador.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Jugador.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Jugador.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:48:16.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Estructuras.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Estructuras.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Estructuras.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Estructuras.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Estructuras.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAA3wOUCAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMQCAAAAAAAAAAAAAOUCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T06:40:40.053Z"
+              "WhenOpened": "2025-03-30T06:40:40.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -162,14 +180,14 @@
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Juego.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Juego.cs",
               "RelativeToolTip": "Yu-Gi-Oh_AMS\\Juego.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwC4AAAByAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwBwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T00:49:05.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Juego.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Juego.Designer.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Juego.Designer.cs",
@@ -181,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Form1.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Form1.cs",
@@ -194,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Form1.Designer.cs",
@@ -206,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Juego.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Juego.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Juego.cs",
@@ -217,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\Final Boss\\YuGiOhAMS\\Yu-Gi-Oh_AMS\\Yu-Gi-Oh_AMS\\Form1.cs",
               "RelativeDocumentMoniker": "Yu-Gi-Oh_AMS\\Form1.cs",

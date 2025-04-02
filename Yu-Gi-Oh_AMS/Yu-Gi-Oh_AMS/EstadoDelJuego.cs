@@ -6,63 +6,44 @@ using System.Threading.Tasks;
 
 namespace Yu_Gi_Oh_AMS
 {
-    internal class EstadoDelJuego
+    public class EstadoDelJuego
     {
-        public bool jugando { get; set; }
-        public bool faseInicial { get; set; }
-        public bool faseDeRobo { get; set; }
-        public bool faseDePreparacion1 { get; set; }
-        public bool faseDeAtaque { get; set; }
-        public bool faseDePreparacion2 { get; set; }
-        public bool faseFinal { get; set; }
-        public int ganador { get; set; }
+        private bool Jugando;
+        public bool jugando
+        {
+            get { return Jugando; }
+            set { Jugando = value; }
+        }
+
+        private int Fase;
+        public int fase
+        {
+            get { return Fase; }
+            set { Fase = value; }
+        }
+
+        private int Ganador;
+        public int ganador
+        {
+            get { return Ganador; }
+            set { Ganador = value; }
+        }
 
         public EstadoDelJuego()
         {
-            jugando = true; 
-            faseInicial = true;
-            faseDeRobo = false;
-            faseDePreparacion1 = false;
-            faseDeAtaque = false;
-            faseDePreparacion2 = false;
-            faseFinal = false;
-            ganador = 0;
+            Jugando = true;
+            Fase = 0;
+            Ganador = -1;
         }
         public void siguienteFase()
         {
-            if (faseInicial)
+            if (fase == 5)
             {
-                faseInicial = false;
-                faseDeRobo = true;
+                fase = 0;
+                return;
             }
-            else if (faseDeRobo)
-            {
-                faseDeRobo = false;
-                faseDePreparacion1 = true;
-            }
-            else if (faseDePreparacion1)
-            {
-                faseDePreparacion1 = false;
-                faseDeAtaque = true;
-            }
-            else if (faseDeAtaque)
-            {
-                faseDeAtaque = false;
-                faseDePreparacion2 = true;
-            }
-            else if (faseDePreparacion2)
-            {
-                faseDePreparacion2 = false;
-                faseFinal = true;
-            }
-            else if (faseFinal)
-            {
-                faseFinal = false;
-                faseInicial = true;
-            }
+            Fase++;
+
         }
-
-        // no se si falta algo mas
-
     }
 }

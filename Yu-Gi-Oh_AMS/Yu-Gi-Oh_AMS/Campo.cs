@@ -7,7 +7,7 @@ using Yu_Gi_Oh_AMS.Cartas;
 
 namespace Yu_Gi_Oh_AMS
 {
-    internal class Campo
+    public class Campo
     {
         public int monstruosActivos { get; set; }
         public int monstruosEnCampo { get; set; }
@@ -54,6 +54,8 @@ namespace Yu_Gi_Oh_AMS
         {
             monstruos.extraerPorDato(monstruo);
             monstruosEnCampo--;
+            //este metodo deberiamos llamarlo en el main, no dentro del metodo eliminarMonstruo porque sino cada que eliminemos tenemos que pasar objetivo, atacante, oponente etc
+            //monstruo.AlSerDestruido();
         }
 
         public void eliminarHechizoOTrampa(Carta carta)

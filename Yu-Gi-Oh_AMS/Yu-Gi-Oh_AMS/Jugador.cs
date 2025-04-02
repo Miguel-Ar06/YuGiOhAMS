@@ -7,29 +7,67 @@ using Yu_Gi_Oh_AMS.Cartas;
 
 namespace Yu_Gi_Oh_AMS
 {
-    internal class Jugador
+    public class Jugador
     {
-        public int numero { get; set; }
-        public string nombre { get; set; }
-        public int lifePoints { get; set; }
-        public int cartasEnMano { get; set; }
+        protected int Numero;
+        public int numero 
+        {
+            get { return Numero; }
+            set { Numero = value; }
+        }
 
-        public bool esTurno { get; set; }
+        protected string Nombre;
+        public string nombre 
+        {
+            get { return Nombre; }
+            set { Nombre = value; }
+        }
 
-        public bool puedeInvocar { get; set; }
+        protected int LifePoints;
+        public int lifePoints 
+        {
+            get { return LifePoints; }
+            set { LifePoints = value; }
+        }
 
-        public ListaDoble<Carta> mano = new ListaDoble<Carta>();
-        public Campo campo = new Campo();
-        public ListaDoble<Carta> cementerio = new ListaDoble<Carta>();
-        public Pila<Carta> mazo = new Pila<Carta>();
+        protected int CartasEnMano;
+        public int cartasEnMano
+        {
+            get { return CartasEnMano; }
+            set { CartasEnMano = value; }
+        }
+
+        protected bool EsTurno;
+        public bool esTurno
+        {
+            get { return EsTurno; }
+            set { EsTurno = value; }
+        }
+
+        protected bool PuedeInvocar; 
+        public bool puedeInvocar
+        {
+            get { return PuedeInvocar; }
+            set { PuedeInvocar = value; }
+        }
+
+        public ListaDoble<Carta> mano;
+        public Campo campo;
+        public ListaDoble<Carta> cementerio;
+        public Pila<Carta> mazo;
 
         public Jugador(int numero, string nombre, bool esTurno)
         {
-            this.numero = numero;
-            this.nombre = nombre;
-            lifePoints = 8000;
-            cartasEnMano = 0;
-            this.esTurno = esTurno;
+            this.Numero = numero;
+            this.Nombre = nombre;
+            LifePoints = 8000;
+            CartasEnMano = 0;
+            this.EsTurno = esTurno;
+
+            mano = new ListaDoble<Carta>();
+            campo = new Campo();
+            cementerio = new ListaDoble<Carta>();
+            mazo = new Pila<Carta>();
         }
 
         public void robarCarta()

@@ -9,7 +9,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
     internal class TormentaRelampago : Hechizo
     {
         public TormentaRelampago() : base("Tormenta Relámpago",
-            "Destruye todos los monstruos en el campo del oponente con menos de 2000 ATK.", Color.Black, "Moguel, pon aqui el png")
+            "Destruye todos los monstruos en el campo del oponente con menos de 2000 ATK.", Color.MediumTurquoise, "Tormenta relámpago.jpeg")
         { }
 
         public override void ActivarEfecto(Jugador jugador, Jugador oponente)
@@ -34,7 +34,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
 
     internal class RecargaMagica : Hechizo
     {
-        public RecargaMagica() : base("Recarga Mágica", "Roba 2 cartas.", Color.Black, "el png aqui moguel") { }
+        public RecargaMagica() : base("Recarga Mágica", "Roba 2 cartas.", Color.MediumTurquoise, "Recarga mágica.jpg") { }
 
         public override void ActivarEfecto(Jugador jugador, Jugador oponente)
         {
@@ -52,7 +52,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
     internal class EspadaDestino : Hechizo
     {
         public EspadaDestino() : base("Espada del Destino",
-            "+1000 ATK a un monstruo (1 turno).", Color.Black, "el png aqui moguel")
+            "+1000 ATK a un monstruo (1 turno).", Color.MediumTurquoise, "Espada del destino.jpeg")
         { }
 
         public override void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo monstruo)
@@ -70,7 +70,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
     internal class CuracionSuprema : Hechizo
     {
         public CuracionSuprema() : base("Curación Suprema",
-            "+2000 LP al jugador.", Color.Black, "pon el png aqui moguel")
+            "+2000 LP al jugador.", Color.MediumTurquoise, "Curación suprema.jpeg")
         { }
 
         public override void ActivarEfecto(Jugador jugador, Jugador oponente)
@@ -82,7 +82,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
     internal class ControlMental : Hechizo
     {
         public ControlMental() : base("Control Mental",
-            "Toma el control de un monstruo enemigo (1 turno).", Color.Black, "pon el png aqui moguel")
+            "Toma el control de un monstruo enemigo (1 turno).", Color.MediumTurquoise, "Control mental (1).jpeg")
         { }
 
         public override void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo monstruo)

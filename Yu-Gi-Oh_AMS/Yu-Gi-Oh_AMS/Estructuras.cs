@@ -9,17 +9,17 @@ namespace Yu_Gi_Oh_AMS
 {
     #region Lista Simple y Nodo
 
-    internal unsafe class Nodo<T> where T : class
+    public unsafe struct Nodo<T> where T : class
     {
-        private T Dato;
-        public T dato 
+        private unsafe T Dato;
+        public unsafe T dato 
         { 
             get { return Dato; } 
             set { Dato = value; } 
         }
 
-        private Nodo<T>* Siguiente; 
-        public Nodo<T>* siguiente 
+        private unsafe Nodo<T>* Siguiente; 
+        public unsafe Nodo<T>* siguiente 
         {
             get { return Siguiente; }
             set { Siguiente = value; } 
@@ -33,7 +33,7 @@ namespace Yu_Gi_Oh_AMS
             set {Indice = value;} 
         }
 
-        public Nodo(T dato)
+        public unsafe Nodo(T dato)
         {
             this.Dato = dato;
             this.Indice = 0;
@@ -41,17 +41,17 @@ namespace Yu_Gi_Oh_AMS
         }
     }
 
-    internal unsafe class ListaSimple<T> where T : class
+    public unsafe class ListaSimple<T> where T : class
     {
-        private Nodo<T>* Cabeza;
-        public Nodo<T>* cabeza
+        private unsafe Nodo<T>* Cabeza;
+        public unsafe Nodo<T>* cabeza
         {
             get { return Cabeza; }
             set { Cabeza = value; }
         }
 
-        private Nodo<T>* Cola;
-        public Nodo<T>* cola 
+        private unsafe Nodo<T>* Cola;
+        public unsafe Nodo<T>* cola 
         {
             get { return Cola; }
             set { Cola = value; }
@@ -64,13 +64,13 @@ namespace Yu_Gi_Oh_AMS
             set { Tamano = value; }
         }
 
-        public ListaSimple()
+        public unsafe ListaSimple()
         {
             Cabeza = null;
             Cola = null;
         }
 
-        public void agregar(T dato)
+        public unsafe void agregar(T dato)
         {
             Nodo<T>* nuevoNodo = (Nodo<T>*)Marshal.AllocHGlobal(sizeof(Nodo<T>));
             nuevoNodo->dato = dato;
@@ -91,7 +91,7 @@ namespace Yu_Gi_Oh_AMS
             indexar();
         }
 
-        public void eliminarPorDato(T dato)
+        public unsafe void eliminarPorDato(T dato)
         {
             Nodo<T>* actual = cabeza;
             Nodo<T>* anterior = null;
@@ -121,7 +121,7 @@ namespace Yu_Gi_Oh_AMS
             indexar();
         }
 
-        public void eliminarPorIndice(int indice)
+        public unsafe void eliminarPorIndice(int indice)
         {
             Nodo<T>* actual = cabeza;
             Nodo<T>* anterior = null;
@@ -150,7 +150,7 @@ namespace Yu_Gi_Oh_AMS
             indexar();
         }
 
-        public void indexar()
+        public unsafe void indexar()
         {
             Nodo<T>* actual = cabeza;
             int indice = 0;
@@ -163,7 +163,7 @@ namespace Yu_Gi_Oh_AMS
             }
         }
 
-        public T obtenerDatoPorIndice(int indice)
+        public unsafe T obtenerDatoPorIndice(int indice)
         {
             Nodo<T>* actual = cabeza;
 
@@ -178,7 +178,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public int obtenerIndicePorDato(T dato)
+        public unsafe int obtenerIndicePorDato(T dato)
         {
             Nodo<T>* actual = cabeza;
 
@@ -198,24 +198,24 @@ namespace Yu_Gi_Oh_AMS
 
     #region Lista doble y nodo
 
-    internal unsafe class NodoDoble<T> where T : class
+    public unsafe struct NodoDoble<T> where T : class
     {
-        private T Dato; 
-        public T dato 
+        private unsafe T Dato; 
+        public unsafe T dato 
         {
             get { return Dato; }
             set { Dato = value; }
         }
 
-        private NodoDoble<T>* Anterior;
-        public NodoDoble<T>* anterior
+        private unsafe NodoDoble<T>* Anterior;
+        public unsafe NodoDoble<T>* anterior
         {
             get { return Anterior; }
             set { Anterior = value; }
         }
 
-        private NodoDoble<T>* Siguiente;
-        public NodoDoble<T>* siguiente
+        private unsafe NodoDoble<T>* Siguiente;
+        public unsafe NodoDoble<T>* siguiente
         {
             get { return Siguiente; }
             set { Siguiente = value; }
@@ -228,7 +228,7 @@ namespace Yu_Gi_Oh_AMS
             set { Indice = value; }
         }
 
-        public NodoDoble(T dato)
+        public unsafe NodoDoble(T dato)
         {
             this.Dato = dato;
             this.Anterior = null;
@@ -237,17 +237,17 @@ namespace Yu_Gi_Oh_AMS
         }
     }
 
-    internal unsafe class ListaDoble<T> where T : class
+    public unsafe class ListaDoble<T> where T : class
     {
-        private NodoDoble<T>* Cabeza; 
-        public NodoDoble<T>* cabeza
+        private unsafe NodoDoble<T>* Cabeza; 
+        public unsafe NodoDoble<T>* cabeza
         {
             get { return Cabeza; }
             set { Cabeza = value; }
         }
 
-        private NodoDoble<T>* Cola;
-        public NodoDoble<T>* cola
+        private unsafe NodoDoble<T>* Cola;
+        public unsafe NodoDoble<T>* cola
         {
             get { return Cola; }
             set { Cola = value; }
@@ -260,12 +260,12 @@ namespace Yu_Gi_Oh_AMS
             set { Tamano = value; }
         }
 
-        public ListaDoble()
+        public unsafe ListaDoble()
         {
             Cabeza = null;
             Cola = null;
         }
-        public void agregar(T dato)
+        public unsafe void agregar(T dato)
         {
             NodoDoble<T>* nuevoNodo = (NodoDoble<T>*)Marshal.AllocHGlobal(sizeof(NodoDoble<T>));
             nuevoNodo->dato = dato;
@@ -287,7 +287,7 @@ namespace Yu_Gi_Oh_AMS
             tamano++;
             indexar();
         }
-        public void agregarEnPosicion(T dato, int posicion)
+        public unsafe void agregarEnPosicion(T dato, int posicion)
         {
             NodoDoble<T>* nuevoNodo = (NodoDoble<T>*)Marshal.AllocHGlobal(sizeof(NodoDoble<T>));
             nuevoNodo->dato = dato;
@@ -333,7 +333,7 @@ namespace Yu_Gi_Oh_AMS
             tamano++;
             indexar();
         }
-        public void eliminarPorDato(T dato)
+        public unsafe void eliminarPorDato(T dato)
         {
             NodoDoble<T>* actual = cabeza;
             NodoDoble<T>* anterior = null;
@@ -363,7 +363,7 @@ namespace Yu_Gi_Oh_AMS
                 indexar();
             }
         }
-        public void eliminarPorIndice(int indice)
+        public unsafe void eliminarPorIndice(int indice)
         {
             NodoDoble<T>* actual = cabeza;
             NodoDoble<T>* anterior = null;
@@ -394,7 +394,7 @@ namespace Yu_Gi_Oh_AMS
 
             indexar();
         }
-        public void indexar()
+        public unsafe void indexar()
         {
             NodoDoble<T>* actual = cabeza;
             int indice = 0;
@@ -406,7 +406,7 @@ namespace Yu_Gi_Oh_AMS
                 actual = actual->siguiente;
             }
         }
-        public T obtenerDatoPorIndice(int indice)
+        public unsafe  T obtenerDatoPorIndice(int indice)
         {
             NodoDoble<T>* actual = cabeza;
 
@@ -420,7 +420,7 @@ namespace Yu_Gi_Oh_AMS
             }
             return null;
         }
-        public int obtenerIndicePorDato(T dato)
+        public unsafe int obtenerIndicePorDato(T dato)
         {
             NodoDoble<T>* actual = cabeza;
 
@@ -434,7 +434,7 @@ namespace Yu_Gi_Oh_AMS
             }
             return -1;
         }
-        public void revolver()
+        public unsafe void revolver()
         {
             Random random = new Random();
             NodoDoble<T>* actual = cabeza;
@@ -471,17 +471,17 @@ namespace Yu_Gi_Oh_AMS
     #endregion
 
     #region Pila
-    internal unsafe class Pila<T> where T : class
+    public unsafe class Pila<T> where T : class
     {
-        private Nodo<T>* Cima; 
-        public Nodo<T>* cima 
+        private unsafe Nodo<T>* Cima; 
+        public unsafe Nodo<T>* cima 
         {
             get { return Cima; }
             set { Cima = value; }
         }
 
-        private Nodo<T>* Fondo; 
-        public Nodo<T>* fondo
+        private unsafe Nodo<T>* Fondo; 
+        public unsafe Nodo<T>* fondo
         {
             get { return Fondo; }
             set { Fondo = value; }
@@ -493,14 +493,14 @@ namespace Yu_Gi_Oh_AMS
             get; 
             set; 
         }
-        public Pila()
+        public unsafe Pila()
         {
             Cima = null;
             Fondo = null;
             Tamano = 0;
         }
 
-        public void indexar()
+        public unsafe void indexar()
         {
             Nodo<T>* actual = cima;
             int indice = 0;
@@ -513,7 +513,7 @@ namespace Yu_Gi_Oh_AMS
             }
         }
 
-        public void apilar(T dato)
+        public unsafe void apilar(T dato)
         {
             Nodo<T>* nuevoNodo = (Nodo<T>*)Marshal.AllocHGlobal(sizeof(Nodo<T>));
             nuevoNodo->dato = dato;
@@ -534,7 +534,7 @@ namespace Yu_Gi_Oh_AMS
             indexar();
         }
 
-        public T desapilar()
+        public unsafe T desapilar()
         {
             if (cima == null)
             {
@@ -550,17 +550,17 @@ namespace Yu_Gi_Oh_AMS
             return nodoDesapilado->dato;
         }
 
-        public T obtenerCima()
+        public unsafe T obtenerCima()
         {
             return cima->dato;
         }
 
-        public T obtenerFondo()
+        public unsafe T obtenerFondo()
         {
             return fondo->dato;
         }
 
-        public T obtenerDatoPorIndice(int indice)
+        public unsafe T obtenerDatoPorIndice(int indice)
         {
             Nodo<T>* actual = cima;
 
@@ -576,7 +576,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public T extraer(int indice)
+        public unsafe T extraer(int indice)
         {
             Nodo<T>* actual = cima;
             Nodo<T>* anterior = null;
@@ -606,7 +606,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public void insertarEnPosicion(T dato, int indice)
+        public unsafe void insertarEnPosicion(T dato, int indice)
         {
             Nodo<T>* nuevoNodo = (Nodo<T>*)Marshal.AllocHGlobal(sizeof(Nodo<T>));
             nuevoNodo->dato = dato;
@@ -648,7 +648,7 @@ namespace Yu_Gi_Oh_AMS
             }
         }
 
-        public void revolver()
+        public unsafe void revolver()
         {
             Random random = new Random();
             Nodo<T>* actual = cima;
@@ -686,7 +686,7 @@ namespace Yu_Gi_Oh_AMS
     #endregion
 
     #region cola
-    internal unsafe class Cola<T> where T : class
+    public unsafe class Cola<T> where T : class
     {
         private int Tamano; 
         public int tamano
@@ -695,28 +695,28 @@ namespace Yu_Gi_Oh_AMS
             set { Tamano = value; }
         }
 
-        private Nodo<T>* Frente; 
-        public Nodo<T>* frente
+        private unsafe Nodo<T>* Frente; 
+        public unsafe Nodo<T>* frente
         {
             get { return Frente; }
             set { Frente = value; }
         }
 
-        private Nodo<T>* Final;
-        public Nodo<T>* final
+        private unsafe Nodo<T>* Final;
+        public unsafe Nodo<T>* final
         {
             get { return Final; }
             set { Final = value; }
         }
 
-        public Cola()
+        public unsafe Cola()
         {
             Tamano = 0;
             Frente = null;
             Final = null;
         }
 
-        public void indexar()
+        public unsafe void indexar()
         {
             Nodo<T>* actual = frente;
             int indice = 0;
@@ -728,7 +728,7 @@ namespace Yu_Gi_Oh_AMS
             }
         }
 
-        public void encolar(T dato)
+        public unsafe void encolar(T dato)
         {
             Nodo<T>* nuevoNodo = (Nodo<T>*)Marshal.AllocHGlobal(sizeof(Nodo<T>));
             nuevoNodo->dato = dato;
@@ -749,7 +749,7 @@ namespace Yu_Gi_Oh_AMS
             indexar();
         }
 
-        public T desencolar()
+        public unsafe T desencolar()
         {
             if (frente == null)
             {
@@ -765,17 +765,17 @@ namespace Yu_Gi_Oh_AMS
             return nodoDesencolado->dato;
         }
 
-        public T obtenerFrente()
+        public unsafe T obtenerFrente()
         {
             return frente->dato;
         }
 
-        public T obtenerFinal()
+        public unsafe T obtenerFinal()
         {
             return final->dato;
         }
 
-        public T obtenerDatoPorIndice(int indice)
+        public unsafe T obtenerDatoPorIndice(int indice)
         {
             Nodo<T>* actual = frente;
             while (actual != null)
@@ -789,7 +789,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public T extraerPorIndice(int indice)
+        public unsafe T extraerPorIndice(int indice)
         {
             Nodo<T>* actual = frente;
             Nodo<T>* anterior = null;
@@ -817,7 +817,7 @@ namespace Yu_Gi_Oh_AMS
             return null;
         }
 
-        public T extraerPorDato(T dato)
+        public unsafe T extraerPorDato(T dato)
         {
             Nodo<T>* actual = frente;
             Nodo<T>* anterior = null;

@@ -1,4 +1,7 @@
-﻿namespace Yu_Gi_Oh_AMS
+﻿using System.Runtime.CompilerServices;
+using Yu_Gi_Oh_AMS.Cartas;
+
+namespace Yu_Gi_Oh_AMS
 {
     partial class Juego
     {
@@ -33,7 +36,7 @@
             infoCarta = new TextBox();
             descripcionCartaSeleccionada = new TextBox();
             barraVidaJ1 = new ProgressBar();
-            progressBar1 = new ProgressBar();
+            barraVidaJ2 = new ProgressBar();
             jugador1HT3 = new PictureBox();
             jugador1Monstruo3 = new PictureBox();
             jugador2HT3 = new PictureBox();
@@ -81,6 +84,7 @@
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             labelMazoJugador1 = new Label();
             labelMazoJugador2 = new Label();
+            botonSiguienteFase = new Button();
             ((System.ComponentModel.ISupportInitialize)cartaSeleccionadaZoom).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1HT3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Monstruo3).BeginInit();
@@ -130,6 +134,7 @@
             // infoCarta
             // 
             infoCarta.BackColor = Color.DarkOrange;
+            infoCarta.Enabled = false;
             infoCarta.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             infoCarta.Location = new Point(28, 328);
             infoCarta.Multiline = true;
@@ -142,12 +147,15 @@
             // descripcionCartaSeleccionada
             // 
             descripcionCartaSeleccionada.BackColor = SystemColors.InactiveCaptionText;
+            descripcionCartaSeleccionada.Enabled = false;
+            descripcionCartaSeleccionada.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             descripcionCartaSeleccionada.ForeColor = SystemColors.Window;
             descripcionCartaSeleccionada.Location = new Point(28, 415);
             descripcionCartaSeleccionada.Multiline = true;
             descripcionCartaSeleccionada.Name = "descripcionCartaSeleccionada";
             descripcionCartaSeleccionada.ReadOnly = true;
-            descripcionCartaSeleccionada.Size = new Size(197, 223);
+            descripcionCartaSeleccionada.ScrollBars = ScrollBars.Vertical;
+            descripcionCartaSeleccionada.Size = new Size(197, 174);
             descripcionCartaSeleccionada.TabIndex = 3;
             descripcionCartaSeleccionada.Text = "Descripcion y efectos de la carta";
             // 
@@ -161,15 +169,15 @@
             barraVidaJ1.TabIndex = 4;
             barraVidaJ1.Value = 4000;
             // 
-            // progressBar1
+            // barraVidaJ2
             // 
-            progressBar1.Anchor = AnchorStyles.Top;
-            progressBar1.Location = new Point(537, 27);
-            progressBar1.Maximum = 8000;
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(302, 29);
-            progressBar1.TabIndex = 5;
-            progressBar1.Value = 5000;
+            barraVidaJ2.Anchor = AnchorStyles.Top;
+            barraVidaJ2.Location = new Point(537, 27);
+            barraVidaJ2.Maximum = 8000;
+            barraVidaJ2.Name = "barraVidaJ2";
+            barraVidaJ2.Size = new Size(302, 29);
+            barraVidaJ2.TabIndex = 5;
+            barraVidaJ2.Value = 5000;
             // 
             // jugador1HT3
             // 
@@ -570,6 +578,8 @@
             jugador1Mano.RowHeadersWidth = 51;
             jugador1Mano.Size = new Size(429, 75);
             jugador1Mano.TabIndex = 56;
+            jugador1Mano.CellContentClick += jugador1Mano_CellContentClick;
+            jugador1Mano.CellContentDoubleClick += jugador1Mano_CellContentDoubleClick;
             // 
             // prueba
             // 
@@ -615,6 +625,7 @@
             jugador2Mano.RowHeadersWidth = 51;
             jugador2Mano.Size = new Size(429, 75);
             jugador2Mano.TabIndex = 57;
+            jugador2Mano.CellContentClick += jugador2Mano_CellContentClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -658,11 +669,26 @@
             labelMazoJugador2.TabIndex = 59;
             labelMazoJugador2.Text = "00";
             // 
+            // botonSiguienteFase
+            // 
+            botonSiguienteFase.BackColor = Color.Tomato;
+            botonSiguienteFase.BackgroundImageLayout = ImageLayout.None;
+            botonSiguienteFase.FlatStyle = FlatStyle.Flat;
+            botonSiguienteFase.Font = new Font("Nasalization", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            botonSiguienteFase.Location = new Point(28, 603);
+            botonSiguienteFase.Name = "botonSiguienteFase";
+            botonSiguienteFase.Size = new Size(197, 35);
+            botonSiguienteFase.TabIndex = 60;
+            botonSiguienteFase.Text = "Siguiente fase ";
+            botonSiguienteFase.UseVisualStyleBackColor = false;
+            botonSiguienteFase.Click += botonSiguienteFase_Click;
+            // 
             // Juego
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 666);
+            Controls.Add(botonSiguienteFase);
             Controls.Add(labelMazoJugador2);
             Controls.Add(labelMazoJugador1);
             Controls.Add(jugador2Mano);
@@ -705,7 +731,7 @@
             Controls.Add(jugador2Monstruo3);
             Controls.Add(jugador1Monstruo3);
             Controls.Add(jugador1HT3);
-            Controls.Add(progressBar1);
+            Controls.Add(barraVidaJ2);
             Controls.Add(barraVidaJ1);
             Controls.Add(descripcionCartaSeleccionada);
             Controls.Add(infoCarta);
@@ -758,7 +784,7 @@
         private TextBox infoCarta;
         private TextBox descripcionCartaSeleccionada;
         private ProgressBar barraVidaJ1;
-        private ProgressBar progressBar1;
+        private ProgressBar barraVidaJ2;
         private PictureBox jugador1HT3;
         private PictureBox jugador1Monstruo3;
         private PictureBox jugador2HT3;
@@ -806,5 +832,235 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private Label labelMazoJugador1;
         private Label labelMazoJugador2;
+
+        public void setLabelMazoJ1(int cantidad)
+        {
+            labelMazoJugador1.Text = cantidad.ToString();
+        }
+        public void setLabelMazoJ2(int cantidad)
+        {
+            labelMazoJugador2.Text = cantidad.ToString();
+        }
+        public void setColorFases(EstadoDelJuego estadoDelJuego)
+        {
+            int faseActual = estadoDelJuego.fase;
+
+            switch (faseActual)
+            {
+                case 0:
+                    labelDP.BackColor = Color.Tomato;
+                    labelSP.BackColor = Color.White;
+                    labelM1.BackColor = Color.White;
+                    labelBP.BackColor = Color.White;
+                    labelM2.BackColor = Color.White;
+                    labelEP.BackColor = Color.White;
+                    break;
+                case 1:
+                    labelDP.BackColor = Color.White;
+                    labelSP.BackColor = Color.Tomato;
+                    labelM1.BackColor = Color.White;
+                    labelBP.BackColor = Color.White;
+                    labelM2.BackColor = Color.White;
+                    labelEP.BackColor = Color.White;
+                    break;
+                case 2:
+                    labelDP.BackColor = Color.White;
+                    labelSP.BackColor = Color.White;
+                    labelM1.BackColor = Color.Tomato;
+                    labelBP.BackColor = Color.White;
+                    labelM2.BackColor = Color.White;
+                    labelEP.BackColor = Color.White;
+                    break;
+                case 3:
+                    labelDP.BackColor = Color.White;
+                    labelSP.BackColor = Color.White;
+                    labelM1.BackColor = Color.White;
+                    labelBP.BackColor = Color.Tomato;
+                    labelM2.BackColor = Color.White;
+                    labelEP.BackColor = Color.White;
+                    break;
+                case 4:
+                    labelDP.BackColor = Color.White;
+                    labelSP.BackColor = Color.White;
+                    labelM1.BackColor = Color.White;
+                    labelBP.BackColor = Color.White;
+                    labelM2.BackColor = Color.Tomato;
+                    labelEP.BackColor = Color.White;
+                    break;
+                case 5:
+                
+                    labelDP.BackColor = Color.White;
+                    labelSP.BackColor = Color.White;
+                    labelM1.BackColor = Color.White;
+                    labelBP.BackColor = Color.White;
+                    labelM2.BackColor = Color.White;
+                    labelEP.BackColor = Color.Tomato;
+                    break;
+            }
+        }
+        public DataGridView getDataGridManoJ1()
+        {
+            return jugador1Mano;
+        }
+        public DataGridView getDataGridManoJ2()
+        {
+            return jugador2Mano;
+        }
+        public void actualizarBarraVidaJ1(int vida)
+        {
+            barraVidaJ1.Value = vida;
+        }
+        public void actualizarBarraVidaJ2(int vida)
+        {
+            barraVidaJ2.Value = vida;
+        }
+
+        private Button botonSiguienteFase;
+
+        public void mostrarInfoCarta(Carta cartaSeleccionada)
+        {
+            if (cartaSeleccionada is null)
+            {
+                infoCarta.Text = "Nombre \r\nATK: \r\nDEF:";
+                descripcionCartaSeleccionada.Text = "Descripcion y efectos de la carta";
+                cartaSeleccionadaZoom.Image = Image.FromFile(cartaSeleccionada.imagenReverso);
+                infoCarta.ForeColor = Color.Black;
+                descripcionCartaSeleccionada.ForeColor = Color.White;
+                return;
+            }
+
+            if (cartaSeleccionada is Monstruo monstruo)
+            {
+                infoCarta.Text = cartaSeleccionada.nombre + "\r\nATK: " + monstruo.ataque + "\r\nDEF: " + monstruo.defensa;
+            }
+            else
+            {
+                infoCarta.Text = cartaSeleccionada.nombre;
+            }
+
+            infoCarta.BackColor = cartaSeleccionada.color;
+            infoCarta.ForeColor = Color.Black;
+            descripcionCartaSeleccionada.Text = cartaSeleccionada.descripcion;
+            descripcionCartaSeleccionada.ForeColor = Color.White;
+            cartaSeleccionadaZoom.Image = Image.FromFile(cartaSeleccionada.imagen);
+        }
+
+        /* 
+        */
+        public void reiniciarColorTextos()
+        {
+            infoCarta.ForeColor = Color.Black;
+            descripcionCartaSeleccionada.ForeColor = Color.White;
+        }
+
+        public void setColorCampos(Color monstruosJ1, Color hechizosJ1, Color monstruosJ2, Color hechizosJ2)
+        {
+            jugador1Monstruo1.BackColor = monstruosJ1;
+            jugador1Monstruo2.BackColor = monstruosJ1;
+            jugador1Monstruo3.BackColor = monstruosJ1;
+            jugador1Monstruo4.BackColor = monstruosJ1;
+            jugador1Monstruo5.BackColor = monstruosJ1;
+            jugador1HT1.BackColor = hechizosJ1;
+            jugador1HT2.BackColor = hechizosJ1;
+            jugador1HT3.BackColor = hechizosJ1;
+            jugador1HT4.BackColor = hechizosJ1;
+            jugador1HT5.BackColor = hechizosJ1;
+
+            jugador2Monstruo1.BackColor = monstruosJ2;
+            jugador2Monstruo2.BackColor = monstruosJ2;
+            jugador2Monstruo3.BackColor = monstruosJ2;
+            jugador2Monstruo4.BackColor = monstruosJ2;
+            jugador2Monstruo5.BackColor = monstruosJ2;
+            jugador2HT1.BackColor = hechizosJ2;
+            jugador2HT2.BackColor = hechizosJ2;
+            jugador2HT3.BackColor = hechizosJ2;
+            jugador2HT4.BackColor = hechizosJ2;
+            jugador2HT5.BackColor = hechizosJ2;
+        }
+
+        #region setter de imagenes de picturebox del campo
+        public void setImagenJugador1Monstruo1(string imagen)
+        {
+            jugador1Monstruo1.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1Monstruo2(string imagen)
+        {
+            jugador1Monstruo2.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1Monstruo3(string imagen)
+        {
+            jugador1Monstruo3.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1Monstruo4(string imagen)
+        {
+            jugador1Monstruo4.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1Monstruo5(string imagen)
+        {
+            jugador1Monstruo5.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1HT1(string imagen)
+        {
+            jugador1HT1.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1HT2(string imagen)
+        {
+            jugador1HT2.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1HT3(string imagen)
+        {
+            jugador1HT3.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1HT4(string imagen)
+        {
+            jugador1HT4.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador1HT5(string imagen)
+        {
+            jugador1HT5.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2Monstruo1(string imagen)
+        {
+            jugador2Monstruo1.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2Monstruo2(string imagen)
+        {
+            jugador2Monstruo2.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2Monstruo3(string imagen)
+        {
+            jugador2Monstruo3.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2Monstruo4(string imagen)
+        {
+            jugador2Monstruo4.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2Monstruo5(string imagen)
+        {
+            jugador2Monstruo5.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2HT1(string imagen)
+        {
+            jugador2HT1.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2HT2(string imagen)
+        {
+            jugador2HT2.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2HT3(string imagen)
+        {
+            jugador2HT3.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2HT4(string imagen)
+        {
+            jugador2HT4.Image = Image.FromFile(imagen);
+        }
+        public void setImagenJugador2HT5(string imagen)
+        {
+            jugador2HT5.Image = Image.FromFile(imagen);
+        }
+
+        #endregion
     }
+
 }

@@ -60,3 +60,58 @@ C:\Users\Angel\Desktop\Final Boss\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\
 C:\Users\Angel\Desktop\Final Boss\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.pdb
 C:\Users\Angel\Desktop\Final Boss\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.genruntimeconfig.cache
 C:\Users\Angel\Desktop\Final Boss\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\ref\Yu-Gi-Oh_AMS.dll
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Agujero oscuro.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Anillo de fuerza.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Asaltante nocturno (1).jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ataque Sorpresa.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Bruja de la niebla.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Caballero brillante.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Caballero oscuro.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Cadenas de sombra.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Cazador Sigiloso.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Control mental (1).jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Curación suprema.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Demonio Menor.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Doble golpe.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Dragón de fuego.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Dragón de Lava.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Escudo mágico .jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espada del destino.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espejo de fuerza.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espejo Deflector.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Explosión Arcana.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golem de granito.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golem de piedra.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golpe Retardado.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero de la espada.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero Relámpago.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Hada sanadora.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ilusión Protectora.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Interrupción.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ladrón fantasma.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Lobo del Eclipse.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Mago de los vientos.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Mago sombrío.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Muro de defensa.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Máquina de Guerra.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ola de curación.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Prisión Dimensional.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Recarga mágica.jpg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Refuerzo Defensivo.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Resurrección de alma.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robar destino.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robo del ladrón.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robo Forzado.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sabio de los Secretos.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sello de poder.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Serpiente Venenosa.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Señuelo de la confusión .jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sustancia pegajosa.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tigre blanco.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Torbellino.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tormenta relámpago.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tortuga Escudo.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Trampa de Arena.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Venganza Final.jpeg
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\YuGiOhCartaReverso.png
+C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero veloz .jpeg

@@ -9,7 +9,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
 {
 
 
-    internal class Carta
+    public class Carta
     {
         protected string Nombre;
         public string nombre 
@@ -81,7 +81,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
             set { Volteada = value; }
         }
 
-        protected string ImagenReverso;
+        protected string ImagenReverso = ObtenerRutaImagen("YuGiOhCartaReverso.png");
         public string imagenReverso 
         {
             get { return ImagenReverso; }
@@ -96,9 +96,18 @@ namespace Yu_Gi_Oh_AMS.Cartas
         }
 
         public virtual void ActivarEfecto(Jugador jugador, Jugador oponente) { }
+
+        protected static string ObtenerRutaImagen(string nombre)
+        {
+            string ruta;
+            string rutaAplicacion = AppDomain.CurrentDomain.BaseDirectory;
+            ruta = Path.Combine(rutaAplicacion, "Img", nombre);
+
+            return ruta;
+        }
     }
 
-    internal class Monstruo : Carta
+    public class Monstruo : Carta
     {
         protected int Ataque; 
         public int ataque
@@ -147,7 +156,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
             set { EsPenetrante = value; }
         }
 
-        public Monstruo(int ataque, int defensa,  string nombre, string descripcion, Color color, string imagen)
+        public Monstruo(int ataque, int defensa,  string nombre, string descripcion, Color color, string nombreImagen)
         {
             this.Ataque = ataque;
             this.AtaqueOriginal = ataque;
@@ -165,91 +174,123 @@ namespace Yu_Gi_Oh_AMS.Cartas
             EnMazo = false;
             Activada = false;
             this.EsPenetrante = false;
-            this.Imagen = imagen;
+            this.Imagen = ObtenerRutaImagen(nombreImagen);
             // sacar la direccion de la imagen del reverso de la carta y asignarla al atributo de la imagen del reverso
         }
 
-        public void atacar (Monstruo objetivo, Jugador jugador, Jugador Oponente )
+        public virtual void AlSerDestruido(Jugador jugador )
+        {
+            return;
+        }
+
+        public virtual void AlSerAtacado(Monstruo oponente)
+        {
+            return;
+        }
+
+        public virtual void AlSerInvocado(Jugador jugador)
+        {
+            return;
+        }
+
+        public void alCementerio(Monstruo monstruo)
+        {
+            monstruo.EnCampo = false;
+            monstruo.EnCementerio = true;
+        }
+
+        // Modificar el método Atacar para llamar a AlSerDestruido cuando corresponda
+        public virtual void Atacar(Monstruo objetivo, Monstruo atacante, Jugador jugador, Jugador oponente)
         {
             int diferencia;
+            puedeAtacar = false;
+            objetivo.AlSerAtacado(atacante);
 
-            if (EsPenetrante && !objetivo.enModoAtaque)
+            if (objetivo == null)
             {
-                PuedeAtacar = false;
-                diferencia = Ataque - objetivo.defensa;
-                if (diferencia > 0)
-                {
-                    Oponente.recibirDanio(diferencia);
-                    objetivo.enCementerio = true;
-                    return;
-                }
-                else if (diferencia == 0)
-                {
-                    return;
-                }
-                else
-                {
-                    jugador.recibirDanio((-1) * diferencia);
-                    return;
-                }
+                // Ataque directo
+                oponente.recibirDanio(ataque);
+                puedeAtacar = false;
+                return;
             }
 
-           
-            if (objetivo.enModoAtaque)
+            if (esPenetrante && !objetivo.enModoAtaque)
             {
-                diferencia = Ataque - objetivo.ataque;
-                PuedeAtacar = false;
+                // Efecto penetrante
+                diferencia = ataque - objetivo.defensa;
 
                 if (diferencia > 0)
                 {
-                    objetivo.enCementerio = true;
-                    Oponente.recibirDanio(diferencia);
-                    return;
+                    oponente.recibirDanio(diferencia);
+                    oponente.campo.eliminarMonstruo(objetivo);
+                    objetivo.alCementerio(objetivo);
+                    objetivo.AlSerDestruido(oponente);
                 }
                 else if (diferencia < 0)
                 {
-                    enCementerio = true;
-                    jugador.recibirDanio((-1) * diferencia);
-                    return;
+                    jugador.recibirDanio(Math.Abs(diferencia));
+                }
+                return;
+            }
+
+            if (objetivo.enModoAtaque)
+            {
+                // Ataque vs Ataque
+                diferencia = ataque - objetivo.ataque;
+
+                if (diferencia > 0)
+                {
+                    oponente.campo.eliminarMonstruo(objetivo);
+                    objetivo.alCementerio(objetivo);
+                    oponente.recibirDanio(diferencia);
+                    objetivo.AlSerDestruido(oponente);
+                }
+                else if (diferencia < 0)
+                {
+                    jugador.campo.eliminarMonstruo(atacante);
+                    atacante.alCementerio(atacante);
+                    AlSerDestruido(jugador);
+                    jugador.recibirDanio(Math.Abs(diferencia));
                 }
                 else
                 {
-                    EnCementerio = true;
-                    objetivo.enCementerio = true;
-                    return;
+                    jugador.campo.eliminarMonstruo(atacante);
+                    alCementerio(atacante);
+                    AlSerDestruido(jugador);
+                    oponente.campo.eliminarMonstruo(objetivo);
+                    objetivo.alCementerio(objetivo);
+                    objetivo.AlSerDestruido(oponente);
                 }
             }
             else
             {
-                PuedeAtacar = false;
-                diferencia = Ataque - objetivo.defensa;
-
+                // Ataque vs Defensa
+                diferencia = ataque - objetivo.defensa;
                 if (diferencia > 0)
                 {
-                    objetivo.enCementerio = true;
-                    return;
+                    objetivo.AlSerDestruido(oponente);
+                    objetivo.alCementerio(objetivo);
+                    oponente.campo.eliminarMonstruo(objetivo);
                 }
                 else if (diferencia < 0)
                 {
-                    jugador.recibirDanio((-1) * diferencia);
-                    return;
-                }
-                else
-                {
-                    objetivo.enCementerio = true;
-                    return ;
+                    jugador.recibirDanio(Math.Abs(diferencia));
                 }
             }
+        }
+        public void cambiarPosicion()
+        {
+            EnModoAtaque = !EnModoAtaque;
         }
 
         public virtual void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo objetivo) { }
     }
 
-    internal class Hechizo : Carta
+    public class Hechizo : Carta
     {
         // int duracion;
 
-        public Hechizo ( string nombre, string descripcion, Color color, string imagen)
+        public Hechizo ( string nombre, string descripcion, Color color, string nombreImagen)
         {
             this.Nombre = nombre;
             this.Descripcion = descripcion;
@@ -261,7 +302,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
             EnMano = false;
             EnMazo = false;
             Activada = false;
-            this.Imagen = imagen;
+            this.Imagen = ObtenerRutaImagen(nombreImagen);
         }
 
         public virtual void ActivarEfecto(Jugador jugador, Jugador oponente, Monstruo monstruo)
@@ -270,10 +311,11 @@ namespace Yu_Gi_Oh_AMS.Cartas
         }
     }
 
-    internal class Trampa : Carta
+    public class Trampa : Carta
     {
         // int duracion;
-        public Trampa(string nombre, string descripcion, string tipo, Color color, string imagen)
+
+        public Trampa(string nombre, string descripcion, string tipo, Color color, string nombreImagen)
         {
             this.Nombre = nombre;
             this.Descripcion = descripcion;
@@ -285,7 +327,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
             EnMano = false;
             EnMazo = false;
             Activada = false;
-            this.Imagen = imagen;
+            this.Imagen = ObtenerRutaImagen(nombreImagen);
         }
     }
 }

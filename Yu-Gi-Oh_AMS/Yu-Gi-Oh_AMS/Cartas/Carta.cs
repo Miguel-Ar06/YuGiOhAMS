@@ -97,7 +97,7 @@ namespace Yu_Gi_Oh_AMS.Cartas
 
         public virtual void ActivarEfecto(Jugador jugador, Jugador oponente) { }
 
-        protected static string ObtenerRutaImagen(string nombre)
+        public static string ObtenerRutaImagen(string nombre)
         {
             string ruta;
             string rutaAplicacion = AppDomain.CurrentDomain.BaseDirectory;

@@ -132,11 +132,12 @@ namespace Yu_Gi_Oh_AMS
                 typeof(EspejoFuerza),
                 typeof(RefuerzoDefensivo),
             };
+
             #endregion
 
             // inicializar jugadores
-            jugador1 = new Jugador(8000, "Jugador 1", true);
-            jugador2 = new Jugador(8000, "Jugador 2", false);
+            jugador1 = new Jugador(1, "Jugador 1", true);
+            jugador2 = new Jugador(2, "Jugador 2", false);
             actualizarBarraVidaJ1(jugador1.lifePoints);
             actualizarBarraVidaJ2(jugador2.lifePoints);
 
@@ -225,12 +226,15 @@ namespace Yu_Gi_Oh_AMS
             manoJugador1.Rows[0].Height = cartaAlto;
             manoJugador2.Rows[0].Height = cartaAlto;
 
+            Image image;
+            Carta carta;
+
             // poblar esa fila con la imagen de una carta por columna
             for (int i = 0; i < jugador1.mano.tamano; i++)
             {
-                Image image;
-                Carta carta = jugador1.mano.obtenerDatoPorIndice(i);
-                if (jugador1.mano.obtenerDatoPorIndice(i).imagen == null || jugador1.mano.obtenerDatoPorIndice(i) == null)
+                //Pero habla demonio
+                carta = jugador1.mano.obtenerDatoPorIndice(i);
+                if (carta.imagen == null )
                 {
                     image = Image.FromFile(jugador1.mano.obtenerDatoPorIndice(i).imagenReverso);
                 }
@@ -253,8 +257,7 @@ namespace Yu_Gi_Oh_AMS
 
             for (int i = 0; i < jugador2.mano.tamano; i++)
             {
-                Image image;
-                Carta carta = jugador2.mano.obtenerDatoPorIndice(i);
+                carta = jugador2.mano.obtenerDatoPorIndice(i);
                 if (jugador2.mano.obtenerDatoPorIndice(i).imagen == null || jugador2.mano.obtenerDatoPorIndice(i) == null)
                 {
                     image = Image.FromFile(jugador2.mano.obtenerDatoPorIndice(i).imagenReverso);

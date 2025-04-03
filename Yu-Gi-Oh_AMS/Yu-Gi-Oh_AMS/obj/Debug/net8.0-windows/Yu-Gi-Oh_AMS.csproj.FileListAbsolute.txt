@@ -115,3 +115,89 @@ C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AM
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Venganza Final.jpeg
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\YuGiOhCartaReverso.png
 C:\Users\nombr\OneDrive\Documentos\code\tarea\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero veloz .jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Agujero oscuro.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Anillo de fuerza.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Asaltante nocturno (1).jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ataque Sorpresa.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Bruja de la niebla.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Caballero brillante.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Caballero oscuro.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Cadenas de sombra.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Cazador Sigiloso.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Control mental (1).jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Curación suprema.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Demonio Menor.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Doble golpe.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Dragón de fuego.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Dragón de Lava.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Escudo mágico .jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espada del destino.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espejo de fuerza.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Espejo Deflector.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Explosión Arcana.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golem de granito.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golem de piedra.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Golpe Retardado.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero de la espada.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero Relámpago.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Guerrero veloz .jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Hada sanadora.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ilusión Protectora.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Interrupción.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ladrón fantasma.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Lobo del Eclipse.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Mago de los vientos.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Mago sombrío.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Muro de defensa.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Máquina de Guerra.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Ola de curación.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Prisión Dimensional.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Recarga mágica.jpg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Refuerzo Defensivo.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Resurrección de alma.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robar destino.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robo del ladrón.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Robo Forzado.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sabio de los Secretos.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sello de poder.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Serpiente Venenosa.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Señuelo de la confusión .jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Sustancia pegajosa.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tigre blanco.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Torbellino.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tormenta relámpago.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Tortuga Escudo.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Trampa de Arena.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\Venganza Final.jpeg
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Img\YuGiOhCartaReverso.png
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Resources\Yu Gi Oh! Japanese OST Yugi's Theme.wav
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Resources\Yu-Gi-Oh! GX Duel Academy - Main Screen.wav
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Yu-Gi-Oh_AMS.exe
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Yu-Gi-Oh_AMS.deps.json
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Yu-Gi-Oh_AMS.runtimeconfig.json
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Yu-Gi-Oh_AMS.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Yu-Gi-Oh_AMS.pdb
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\Krypton.Toolkit.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.Asio.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.Core.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.Midi.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.WinForms.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\bin\Debug\net8.0-windows\NAudio.WinMM.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu_Gi_Oh_AMS.Form1.resources
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu_Gi_Oh_AMS.Juego.resources
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu_Gi_Oh_AMS.Properties.Resources.resources
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.csproj.GenerateResource.cache
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.AssemblyInfo.cs
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.sourcelink.json
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh.9E52D5FC.Up2Date
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\refint\Yu-Gi-Oh_AMS.dll
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.pdb
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\Yu-Gi-Oh_AMS.genruntimeconfig.cache
+C:\Users\Angel\Desktop\Final Boss\Respaldo\YuGiOhAMS\Yu-Gi-Oh_AMS\Yu-Gi-Oh_AMS\obj\Debug\net8.0-windows\ref\Yu-Gi-Oh_AMS.dll

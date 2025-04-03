@@ -37,34 +37,12 @@ namespace Yu_Gi_Oh_AMS
             descripcionCartaSeleccionada = new TextBox();
             barraVidaJ1 = new ProgressBar();
             barraVidaJ2 = new ProgressBar();
-            jugador1HT3 = new PictureBox();
-            jugador1Monstruo3 = new PictureBox();
-            jugador2HT3 = new PictureBox();
-            jugador2Monstruo3 = new PictureBox();
-            jugador2HT4 = new PictureBox();
-            jugador2Monstruo4 = new PictureBox();
-            jugador1Monstruo2 = new PictureBox();
-            jugador1HT2 = new PictureBox();
-            jugador2HT5 = new PictureBox();
-            jugador2Monstruo5 = new PictureBox();
-            jugador1Monstruo1 = new PictureBox();
-            jugador1HT1 = new PictureBox();
-            jugador2HT2 = new PictureBox();
-            jugador2Monstruo2 = new PictureBox();
-            jugador1Monstruo4 = new PictureBox();
-            jugador1HT4 = new PictureBox();
-            jugador2HT1 = new PictureBox();
-            jugador2Monstruo1 = new PictureBox();
-            jugador1Monstruo5 = new PictureBox();
-            jugador1HT5 = new PictureBox();
             pictureBox34 = new PictureBox();
             pictureBox35 = new PictureBox();
-            jugador1Cementerio = new PictureBox();
             jugador1Deck = new PictureBox();
             pictureBox38 = new PictureBox();
             pictureBox39 = new PictureBox();
             jugador2Deck = new PictureBox();
-            jugador2Cementerio = new PictureBox();
             pictureBox42 = new PictureBox();
             pictureBox43 = new PictureBox();
             labelJugador1 = new Label();
@@ -84,41 +62,43 @@ namespace Yu_Gi_Oh_AMS
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             labelMazoJugador1 = new Label();
             labelMazoJugador2 = new Label();
+            HechizosTrampasJ1 = new DataGridView();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            MonsrtuosJ1 = new DataGridView();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            HechizosTrampasJ2 = new DataGridView();
+            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
+            MonstruosJ2 = new DataGridView();
+            dataGridViewTextBoxColumn9 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
+            CementerioJ1 = new DataGridView();
+            dataGridViewTextBoxColumn11 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn12 = new DataGridViewTextBoxColumn();
+            CementerioJ2 = new DataGridView();
+            dataGridViewTextBoxColumn13 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn14 = new DataGridViewTextBoxColumn();
             botonSiguienteFase = new Button();
             ((System.ComponentModel.ISupportInitialize)cartaSeleccionadaZoom).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox34).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox35).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Cementerio).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Deck).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox39).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador2Deck).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Cementerio).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox42).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox43).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Mano).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)jugador2Mano).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)HechizosTrampasJ1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MonsrtuosJ1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)HechizosTrampasJ2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MonstruosJ2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CementerioJ1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CementerioJ2).BeginInit();
             SuspendLayout();
             // 
             // cartaSeleccionadaZoom
@@ -179,206 +159,6 @@ namespace Yu_Gi_Oh_AMS
             barraVidaJ2.TabIndex = 5;
             barraVidaJ2.Value = 5000;
             // 
-            // jugador1HT3
-            // 
-            jugador1HT3.Anchor = AnchorStyles.Bottom;
-            jugador1HT3.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1HT3.Location = new Point(646, 422);
-            jugador1HT3.Name = "jugador1HT3";
-            jugador1HT3.Size = new Size(75, 75);
-            jugador1HT3.TabIndex = 18;
-            jugador1HT3.TabStop = false;
-            // 
-            // jugador1Monstruo3
-            // 
-            jugador1Monstruo3.Anchor = AnchorStyles.Bottom;
-            jugador1Monstruo3.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Monstruo3.Location = new Point(646, 341);
-            jugador1Monstruo3.Name = "jugador1Monstruo3";
-            jugador1Monstruo3.Size = new Size(75, 75);
-            jugador1Monstruo3.TabIndex = 19;
-            jugador1Monstruo3.TabStop = false;
-            // 
-            // jugador2HT3
-            // 
-            jugador2HT3.Anchor = AnchorStyles.Top;
-            jugador2HT3.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2HT3.Location = new Point(646, 162);
-            jugador2HT3.Name = "jugador2HT3";
-            jugador2HT3.Size = new Size(75, 75);
-            jugador2HT3.TabIndex = 21;
-            jugador2HT3.TabStop = false;
-            // 
-            // jugador2Monstruo3
-            // 
-            jugador2Monstruo3.Anchor = AnchorStyles.Top;
-            jugador2Monstruo3.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Monstruo3.Location = new Point(646, 243);
-            jugador2Monstruo3.Name = "jugador2Monstruo3";
-            jugador2Monstruo3.Size = new Size(75, 75);
-            jugador2Monstruo3.TabIndex = 20;
-            jugador2Monstruo3.TabStop = false;
-            // 
-            // jugador2HT4
-            // 
-            jugador2HT4.Anchor = AnchorStyles.Top;
-            jugador2HT4.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2HT4.Location = new Point(557, 162);
-            jugador2HT4.Name = "jugador2HT4";
-            jugador2HT4.Size = new Size(75, 75);
-            jugador2HT4.TabIndex = 25;
-            jugador2HT4.TabStop = false;
-            // 
-            // jugador2Monstruo4
-            // 
-            jugador2Monstruo4.Anchor = AnchorStyles.Top;
-            jugador2Monstruo4.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Monstruo4.Location = new Point(557, 243);
-            jugador2Monstruo4.Name = "jugador2Monstruo4";
-            jugador2Monstruo4.Size = new Size(75, 75);
-            jugador2Monstruo4.TabIndex = 24;
-            jugador2Monstruo4.TabStop = false;
-            // 
-            // jugador1Monstruo2
-            // 
-            jugador1Monstruo2.Anchor = AnchorStyles.Bottom;
-            jugador1Monstruo2.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Monstruo2.Location = new Point(557, 341);
-            jugador1Monstruo2.Name = "jugador1Monstruo2";
-            jugador1Monstruo2.Size = new Size(75, 75);
-            jugador1Monstruo2.TabIndex = 23;
-            jugador1Monstruo2.TabStop = false;
-            // 
-            // jugador1HT2
-            // 
-            jugador1HT2.Anchor = AnchorStyles.Bottom;
-            jugador1HT2.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1HT2.Location = new Point(557, 422);
-            jugador1HT2.Name = "jugador1HT2";
-            jugador1HT2.Size = new Size(75, 75);
-            jugador1HT2.TabIndex = 22;
-            jugador1HT2.TabStop = false;
-            // 
-            // jugador2HT5
-            // 
-            jugador2HT5.Anchor = AnchorStyles.Top;
-            jugador2HT5.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2HT5.Location = new Point(469, 162);
-            jugador2HT5.Name = "jugador2HT5";
-            jugador2HT5.Size = new Size(75, 75);
-            jugador2HT5.TabIndex = 29;
-            jugador2HT5.TabStop = false;
-            // 
-            // jugador2Monstruo5
-            // 
-            jugador2Monstruo5.Anchor = AnchorStyles.Top;
-            jugador2Monstruo5.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Monstruo5.Location = new Point(469, 243);
-            jugador2Monstruo5.Name = "jugador2Monstruo5";
-            jugador2Monstruo5.Size = new Size(75, 75);
-            jugador2Monstruo5.TabIndex = 28;
-            jugador2Monstruo5.TabStop = false;
-            // 
-            // jugador1Monstruo1
-            // 
-            jugador1Monstruo1.Anchor = AnchorStyles.Bottom;
-            jugador1Monstruo1.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Monstruo1.Location = new Point(469, 341);
-            jugador1Monstruo1.Name = "jugador1Monstruo1";
-            jugador1Monstruo1.Size = new Size(75, 75);
-            jugador1Monstruo1.TabIndex = 27;
-            jugador1Monstruo1.TabStop = false;
-            // 
-            // jugador1HT1
-            // 
-            jugador1HT1.Anchor = AnchorStyles.Bottom;
-            jugador1HT1.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1HT1.Location = new Point(469, 422);
-            jugador1HT1.Name = "jugador1HT1";
-            jugador1HT1.Size = new Size(75, 75);
-            jugador1HT1.TabIndex = 26;
-            jugador1HT1.TabStop = false;
-            // 
-            // jugador2HT2
-            // 
-            jugador2HT2.Anchor = AnchorStyles.Top;
-            jugador2HT2.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2HT2.Location = new Point(734, 162);
-            jugador2HT2.Name = "jugador2HT2";
-            jugador2HT2.Size = new Size(75, 75);
-            jugador2HT2.TabIndex = 33;
-            jugador2HT2.TabStop = false;
-            // 
-            // jugador2Monstruo2
-            // 
-            jugador2Monstruo2.Anchor = AnchorStyles.Top;
-            jugador2Monstruo2.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Monstruo2.Location = new Point(734, 243);
-            jugador2Monstruo2.Name = "jugador2Monstruo2";
-            jugador2Monstruo2.Size = new Size(75, 75);
-            jugador2Monstruo2.TabIndex = 32;
-            jugador2Monstruo2.TabStop = false;
-            // 
-            // jugador1Monstruo4
-            // 
-            jugador1Monstruo4.Anchor = AnchorStyles.Bottom;
-            jugador1Monstruo4.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Monstruo4.Location = new Point(734, 341);
-            jugador1Monstruo4.Name = "jugador1Monstruo4";
-            jugador1Monstruo4.Size = new Size(75, 75);
-            jugador1Monstruo4.TabIndex = 31;
-            jugador1Monstruo4.TabStop = false;
-            // 
-            // jugador1HT4
-            // 
-            jugador1HT4.Anchor = AnchorStyles.Bottom;
-            jugador1HT4.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1HT4.Location = new Point(734, 422);
-            jugador1HT4.Name = "jugador1HT4";
-            jugador1HT4.Size = new Size(75, 75);
-            jugador1HT4.TabIndex = 30;
-            jugador1HT4.TabStop = false;
-            // 
-            // jugador2HT1
-            // 
-            jugador2HT1.Anchor = AnchorStyles.Top;
-            jugador2HT1.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2HT1.Location = new Point(823, 162);
-            jugador2HT1.Name = "jugador2HT1";
-            jugador2HT1.Size = new Size(75, 75);
-            jugador2HT1.TabIndex = 37;
-            jugador2HT1.TabStop = false;
-            // 
-            // jugador2Monstruo1
-            // 
-            jugador2Monstruo1.Anchor = AnchorStyles.Top;
-            jugador2Monstruo1.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Monstruo1.Location = new Point(823, 243);
-            jugador2Monstruo1.Name = "jugador2Monstruo1";
-            jugador2Monstruo1.Size = new Size(75, 75);
-            jugador2Monstruo1.TabIndex = 36;
-            jugador2Monstruo1.TabStop = false;
-            // 
-            // jugador1Monstruo5
-            // 
-            jugador1Monstruo5.Anchor = AnchorStyles.Bottom;
-            jugador1Monstruo5.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Monstruo5.Location = new Point(823, 341);
-            jugador1Monstruo5.Name = "jugador1Monstruo5";
-            jugador1Monstruo5.Size = new Size(75, 75);
-            jugador1Monstruo5.TabIndex = 35;
-            jugador1Monstruo5.TabStop = false;
-            // 
-            // jugador1HT5
-            // 
-            jugador1HT5.Anchor = AnchorStyles.Bottom;
-            jugador1HT5.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1HT5.Location = new Point(823, 422);
-            jugador1HT5.Name = "jugador1HT5";
-            jugador1HT5.Size = new Size(75, 75);
-            jugador1HT5.TabIndex = 34;
-            jugador1HT5.TabStop = false;
-            // 
             // pictureBox34
             // 
             pictureBox34.Anchor = AnchorStyles.Bottom;
@@ -398,16 +178,6 @@ namespace Yu_Gi_Oh_AMS
             pictureBox35.Size = new Size(52, 75);
             pictureBox35.TabIndex = 39;
             pictureBox35.TabStop = false;
-            // 
-            // jugador1Cementerio
-            // 
-            jugador1Cementerio.Anchor = AnchorStyles.Bottom;
-            jugador1Cementerio.BackColor = Color.FromArgb(32, 32, 32);
-            jugador1Cementerio.Location = new Point(914, 341);
-            jugador1Cementerio.Name = "jugador1Cementerio";
-            jugador1Cementerio.Size = new Size(52, 75);
-            jugador1Cementerio.TabIndex = 41;
-            jugador1Cementerio.TabStop = false;
             // 
             // jugador1Deck
             // 
@@ -452,16 +222,6 @@ namespace Yu_Gi_Oh_AMS
             jugador2Deck.SizeMode = PictureBoxSizeMode.Zoom;
             jugador2Deck.TabIndex = 45;
             jugador2Deck.TabStop = false;
-            // 
-            // jugador2Cementerio
-            // 
-            jugador2Cementerio.Anchor = AnchorStyles.Top;
-            jugador2Cementerio.BackColor = Color.FromArgb(32, 32, 32);
-            jugador2Cementerio.Location = new Point(401, 243);
-            jugador2Cementerio.Name = "jugador2Cementerio";
-            jugador2Cementerio.Size = new Size(52, 75);
-            jugador2Cementerio.TabIndex = 44;
-            jugador2Cementerio.TabStop = false;
             // 
             // pictureBox42
             // 
@@ -567,9 +327,12 @@ namespace Yu_Gi_Oh_AMS
             // 
             jugador1Mano.AllowUserToAddRows = false;
             jugador1Mano.AllowUserToOrderColumns = true;
+            jugador1Mano.AllowUserToResizeColumns = false;
+            jugador1Mano.AllowUserToResizeRows = false;
             jugador1Mano.Anchor = AnchorStyles.Bottom;
             jugador1Mano.BackgroundColor = Color.FromArgb(32, 32, 32);
             jugador1Mano.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            jugador1Mano.ColumnHeadersVisible = false;
             jugador1Mano.Columns.AddRange(new DataGridViewColumn[] { prueba, prueba2 });
             jugador1Mano.GridColor = Color.BlueViolet;
             jugador1Mano.Location = new Point(469, 514);
@@ -617,6 +380,7 @@ namespace Yu_Gi_Oh_AMS
             jugador2Mano.Anchor = AnchorStyles.Top;
             jugador2Mano.BackgroundColor = Color.FromArgb(32, 32, 32);
             jugador2Mano.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            jugador2Mano.ColumnHeadersVisible = false;
             jugador2Mano.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2 });
             jugador2Mano.GridColor = Color.BlueViolet;
             jugador2Mano.Location = new Point(469, 71);
@@ -626,6 +390,7 @@ namespace Yu_Gi_Oh_AMS
             jugador2Mano.Size = new Size(429, 75);
             jugador2Mano.TabIndex = 57;
             jugador2Mano.CellContentClick += jugador2Mano_CellContentClick;
+            jugador2Mano.CellContentDoubleClick += jugador2Mano_CellContentDoubleClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -669,19 +434,241 @@ namespace Yu_Gi_Oh_AMS
             labelMazoJugador2.TabIndex = 59;
             labelMazoJugador2.Text = "00";
             // 
+            // HechizosTrampasJ1
+            // 
+            HechizosTrampasJ1.AllowUserToAddRows = false;
+            HechizosTrampasJ1.AllowUserToOrderColumns = true;
+            HechizosTrampasJ1.AllowUserToResizeColumns = false;
+            HechizosTrampasJ1.AllowUserToResizeRows = false;
+            HechizosTrampasJ1.Anchor = AnchorStyles.Bottom;
+            HechizosTrampasJ1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            HechizosTrampasJ1.BackgroundColor = Color.FromArgb(32, 32, 32);
+            HechizosTrampasJ1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            HechizosTrampasJ1.ColumnHeadersVisible = false;
+            HechizosTrampasJ1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
+            HechizosTrampasJ1.GridColor = Color.BlueViolet;
+            HechizosTrampasJ1.Location = new Point(469, 422);
+            HechizosTrampasJ1.Name = "HechizosTrampasJ1";
+            HechizosTrampasJ1.ReadOnly = true;
+            HechizosTrampasJ1.RowHeadersVisible = false;
+            HechizosTrampasJ1.RowHeadersWidth = 51;
+            HechizosTrampasJ1.Size = new Size(429, 75);
+            HechizosTrampasJ1.TabIndex = 60;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.HeaderText = "prueba";
+            dataGridViewTextBoxColumn3.MinimumWidth = 75;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn4.MinimumWidth = 75;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            dataGridViewTextBoxColumn4.Resizable = DataGridViewTriState.False;
+            // 
+            // MonsrtuosJ1
+            // 
+            MonsrtuosJ1.AllowUserToAddRows = false;
+            MonsrtuosJ1.AllowUserToOrderColumns = true;
+            MonsrtuosJ1.AllowUserToResizeColumns = false;
+            MonsrtuosJ1.AllowUserToResizeRows = false;
+            MonsrtuosJ1.Anchor = AnchorStyles.Bottom;
+            MonsrtuosJ1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            MonsrtuosJ1.BackgroundColor = Color.FromArgb(32, 32, 32);
+            MonsrtuosJ1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            MonsrtuosJ1.ColumnHeadersVisible = false;
+            MonsrtuosJ1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
+            MonsrtuosJ1.GridColor = Color.BlueViolet;
+            MonsrtuosJ1.Location = new Point(469, 341);
+            MonsrtuosJ1.Name = "MonsrtuosJ1";
+            MonsrtuosJ1.ReadOnly = true;
+            MonsrtuosJ1.RowHeadersVisible = false;
+            MonsrtuosJ1.RowHeadersWidth = 51;
+            MonsrtuosJ1.Size = new Size(429, 75);
+            MonsrtuosJ1.TabIndex = 61;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.HeaderText = "prueba";
+            dataGridViewTextBoxColumn5.MinimumWidth = 75;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            dataGridViewTextBoxColumn5.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn6.MinimumWidth = 75;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewTextBoxColumn6.Resizable = DataGridViewTriState.False;
+            // 
+            // HechizosTrampasJ2
+            // 
+            HechizosTrampasJ2.AllowUserToAddRows = false;
+            HechizosTrampasJ2.AllowUserToOrderColumns = true;
+            HechizosTrampasJ2.AllowUserToResizeColumns = false;
+            HechizosTrampasJ2.AllowUserToResizeRows = false;
+            HechizosTrampasJ2.Anchor = AnchorStyles.Bottom;
+            HechizosTrampasJ2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            HechizosTrampasJ2.BackgroundColor = Color.FromArgb(32, 32, 32);
+            HechizosTrampasJ2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            HechizosTrampasJ2.ColumnHeadersVisible = false;
+            HechizosTrampasJ2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn7, dataGridViewTextBoxColumn8 });
+            HechizosTrampasJ2.GridColor = Color.BlueViolet;
+            HechizosTrampasJ2.Location = new Point(469, 162);
+            HechizosTrampasJ2.Name = "HechizosTrampasJ2";
+            HechizosTrampasJ2.ReadOnly = true;
+            HechizosTrampasJ2.RowHeadersVisible = false;
+            HechizosTrampasJ2.RowHeadersWidth = 51;
+            HechizosTrampasJ2.Size = new Size(429, 75);
+            HechizosTrampasJ2.TabIndex = 62;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewTextBoxColumn7.HeaderText = "prueba";
+            dataGridViewTextBoxColumn7.MinimumWidth = 75;
+            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            dataGridViewTextBoxColumn7.ReadOnly = true;
+            dataGridViewTextBoxColumn7.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewTextBoxColumn8.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn8.MinimumWidth = 75;
+            dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            dataGridViewTextBoxColumn8.ReadOnly = true;
+            dataGridViewTextBoxColumn8.Resizable = DataGridViewTriState.False;
+            // 
+            // MonstruosJ2
+            // 
+            MonstruosJ2.AllowUserToAddRows = false;
+            MonstruosJ2.AllowUserToOrderColumns = true;
+            MonstruosJ2.AllowUserToResizeColumns = false;
+            MonstruosJ2.AllowUserToResizeRows = false;
+            MonstruosJ2.Anchor = AnchorStyles.Bottom;
+            MonstruosJ2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            MonstruosJ2.BackgroundColor = Color.FromArgb(32, 32, 32);
+            MonstruosJ2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            MonstruosJ2.ColumnHeadersVisible = false;
+            MonstruosJ2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn9, dataGridViewTextBoxColumn10 });
+            MonstruosJ2.GridColor = Color.BlueViolet;
+            MonstruosJ2.Location = new Point(469, 243);
+            MonstruosJ2.Name = "MonstruosJ2";
+            MonstruosJ2.ReadOnly = true;
+            MonstruosJ2.RowHeadersVisible = false;
+            MonstruosJ2.RowHeadersWidth = 51;
+            MonstruosJ2.Size = new Size(429, 75);
+            MonstruosJ2.TabIndex = 63;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewTextBoxColumn9.HeaderText = "prueba";
+            dataGridViewTextBoxColumn9.MinimumWidth = 75;
+            dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            dataGridViewTextBoxColumn9.ReadOnly = true;
+            dataGridViewTextBoxColumn9.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewTextBoxColumn10.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn10.MinimumWidth = 75;
+            dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            dataGridViewTextBoxColumn10.ReadOnly = true;
+            dataGridViewTextBoxColumn10.Resizable = DataGridViewTriState.False;
+            // 
+            // CementerioJ1
+            // 
+            CementerioJ1.AllowUserToAddRows = false;
+            CementerioJ1.AllowUserToOrderColumns = true;
+            CementerioJ1.AllowUserToResizeColumns = false;
+            CementerioJ1.AllowUserToResizeRows = false;
+            CementerioJ1.Anchor = AnchorStyles.Bottom;
+            CementerioJ1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            CementerioJ1.BackgroundColor = Color.FromArgb(32, 32, 32);
+            CementerioJ1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CementerioJ1.ColumnHeadersVisible = false;
+            CementerioJ1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn11, dataGridViewTextBoxColumn12 });
+            CementerioJ1.GridColor = Color.BlueViolet;
+            CementerioJ1.Location = new Point(914, 341);
+            CementerioJ1.Name = "CementerioJ1";
+            CementerioJ1.ReadOnly = true;
+            CementerioJ1.RowHeadersVisible = false;
+            CementerioJ1.RowHeadersWidth = 51;
+            CementerioJ1.Size = new Size(112, 75);
+            CementerioJ1.TabIndex = 64;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewTextBoxColumn11.HeaderText = "prueba";
+            dataGridViewTextBoxColumn11.MinimumWidth = 75;
+            dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            dataGridViewTextBoxColumn11.ReadOnly = true;
+            dataGridViewTextBoxColumn11.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewTextBoxColumn12.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn12.MinimumWidth = 75;
+            dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            dataGridViewTextBoxColumn12.ReadOnly = true;
+            dataGridViewTextBoxColumn12.Resizable = DataGridViewTriState.False;
+            // 
+            // CementerioJ2
+            // 
+            CementerioJ2.AllowUserToAddRows = false;
+            CementerioJ2.AllowUserToOrderColumns = true;
+            CementerioJ2.AllowUserToResizeColumns = false;
+            CementerioJ2.AllowUserToResizeRows = false;
+            CementerioJ2.Anchor = AnchorStyles.Bottom;
+            CementerioJ2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            CementerioJ2.BackgroundColor = Color.FromArgb(32, 32, 32);
+            CementerioJ2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CementerioJ2.ColumnHeadersVisible = false;
+            CementerioJ2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14 });
+            CementerioJ2.GridColor = Color.BlueViolet;
+            CementerioJ2.Location = new Point(341, 243);
+            CementerioJ2.Name = "CementerioJ2";
+            CementerioJ2.ReadOnly = true;
+            CementerioJ2.RowHeadersVisible = false;
+            CementerioJ2.RowHeadersWidth = 51;
+            CementerioJ2.Size = new Size(112, 75);
+            CementerioJ2.TabIndex = 65;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            dataGridViewTextBoxColumn13.HeaderText = "prueba";
+            dataGridViewTextBoxColumn13.MinimumWidth = 75;
+            dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            dataGridViewTextBoxColumn13.ReadOnly = true;
+            dataGridViewTextBoxColumn13.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            dataGridViewTextBoxColumn14.HeaderText = "prueba2";
+            dataGridViewTextBoxColumn14.MinimumWidth = 75;
+            dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            dataGridViewTextBoxColumn14.ReadOnly = true;
+            dataGridViewTextBoxColumn14.Resizable = DataGridViewTriState.False;
+            // 
             // botonSiguienteFase
             // 
             botonSiguienteFase.BackColor = Color.Tomato;
             botonSiguienteFase.BackgroundImageLayout = ImageLayout.None;
             botonSiguienteFase.FlatStyle = FlatStyle.Flat;
-            botonSiguienteFase.Font = new Font("Nasalization", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            botonSiguienteFase.Location = new Point(28, 603);
+            botonSiguienteFase.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            botonSiguienteFase.Location = new Point(28, 609);
             botonSiguienteFase.Name = "botonSiguienteFase";
-            botonSiguienteFase.Size = new Size(197, 35);
-            botonSiguienteFase.TabIndex = 60;
-            botonSiguienteFase.Text = "Siguiente fase ";
+            botonSiguienteFase.Size = new Size(197, 29);
+            botonSiguienteFase.TabIndex = 66;
+            botonSiguienteFase.Text = "Siguiente Fase";
             botonSiguienteFase.UseVisualStyleBackColor = false;
-            botonSiguienteFase.Click += botonSiguienteFase_Click;
+            botonSiguienteFase.Click += botonSiguienteFase_Click_1;
             // 
             // Juego
             // 
@@ -689,6 +676,12 @@ namespace Yu_Gi_Oh_AMS
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 666);
             Controls.Add(botonSiguienteFase);
+            Controls.Add(CementerioJ2);
+            Controls.Add(CementerioJ1);
+            Controls.Add(MonstruosJ2);
+            Controls.Add(HechizosTrampasJ2);
+            Controls.Add(MonsrtuosJ1);
+            Controls.Add(HechizosTrampasJ1);
             Controls.Add(labelMazoJugador2);
             Controls.Add(labelMazoJugador1);
             Controls.Add(jugador2Mano);
@@ -704,33 +697,11 @@ namespace Yu_Gi_Oh_AMS
             Controls.Add(pictureBox43);
             Controls.Add(pictureBox42);
             Controls.Add(jugador2Deck);
-            Controls.Add(jugador2Cementerio);
             Controls.Add(pictureBox38);
             Controls.Add(pictureBox39);
-            Controls.Add(jugador1Cementerio);
             Controls.Add(jugador1Deck);
             Controls.Add(pictureBox35);
             Controls.Add(pictureBox34);
-            Controls.Add(jugador2HT1);
-            Controls.Add(jugador2Monstruo1);
-            Controls.Add(jugador1Monstruo5);
-            Controls.Add(jugador1HT5);
-            Controls.Add(jugador2HT2);
-            Controls.Add(jugador2Monstruo2);
-            Controls.Add(jugador1Monstruo4);
-            Controls.Add(jugador1HT4);
-            Controls.Add(jugador2HT5);
-            Controls.Add(jugador2Monstruo5);
-            Controls.Add(jugador1Monstruo1);
-            Controls.Add(jugador1HT1);
-            Controls.Add(jugador2HT4);
-            Controls.Add(jugador2Monstruo4);
-            Controls.Add(jugador1Monstruo2);
-            Controls.Add(jugador1HT2);
-            Controls.Add(jugador2HT3);
-            Controls.Add(jugador2Monstruo3);
-            Controls.Add(jugador1Monstruo3);
-            Controls.Add(jugador1HT3);
             Controls.Add(barraVidaJ2);
             Controls.Add(barraVidaJ1);
             Controls.Add(descripcionCartaSeleccionada);
@@ -742,39 +713,23 @@ namespace Yu_Gi_Oh_AMS
             FormClosing += Juego_FormClosing;
             Load += Juego_Load;
             ((System.ComponentModel.ISupportInitialize)cartaSeleccionadaZoom).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2HT1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Monstruo1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Monstruo5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1HT5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox34).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox35).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador1Cementerio).EndInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Deck).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox39).EndInit();
             ((System.ComponentModel.ISupportInitialize)jugador2Deck).EndInit();
-            ((System.ComponentModel.ISupportInitialize)jugador2Cementerio).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox42).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox43).EndInit();
             ((System.ComponentModel.ISupportInitialize)jugador1Mano).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)jugador2Mano).EndInit();
+            ((System.ComponentModel.ISupportInitialize)HechizosTrampasJ1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MonsrtuosJ1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)HechizosTrampasJ2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MonstruosJ2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CementerioJ1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CementerioJ2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -785,34 +740,12 @@ namespace Yu_Gi_Oh_AMS
         private TextBox descripcionCartaSeleccionada;
         private ProgressBar barraVidaJ1;
         private ProgressBar barraVidaJ2;
-        private PictureBox jugador1HT3;
-        private PictureBox jugador1Monstruo3;
-        private PictureBox jugador2HT3;
-        private PictureBox jugador2Monstruo3;
-        private PictureBox jugador2HT4;
-        private PictureBox jugador2Monstruo4;
-        private PictureBox jugador1Monstruo2;
-        private PictureBox jugador1HT2;
-        private PictureBox jugador2HT5;
-        private PictureBox jugador2Monstruo5;
-        private PictureBox jugador1Monstruo1;
-        private PictureBox jugador1HT1;
-        private PictureBox jugador2HT2;
-        private PictureBox jugador2Monstruo2;
-        private PictureBox jugador1Monstruo4;
-        private PictureBox jugador1HT4;
-        private PictureBox jugador2HT1;
-        private PictureBox jugador2Monstruo1;
-        private PictureBox jugador1Monstruo5;
-        private PictureBox jugador1HT5;
         private PictureBox pictureBox34;
         private PictureBox pictureBox35;
-        private PictureBox jugador1Cementerio;
         private PictureBox jugador1Deck;
         private PictureBox pictureBox38;
         private PictureBox pictureBox39;
         private PictureBox jugador2Deck;
-        private PictureBox jugador2Cementerio;
         private PictureBox pictureBox42;
         private PictureBox pictureBox43;
         private Label labelJugador1;
@@ -915,8 +848,6 @@ namespace Yu_Gi_Oh_AMS
             barraVidaJ2.Value = vida;
         }
 
-        private Button botonSiguienteFase;
-
         public void mostrarInfoCarta(Carta cartaSeleccionada)
         {
             if (cartaSeleccionada is null)
@@ -953,114 +884,51 @@ namespace Yu_Gi_Oh_AMS
             descripcionCartaSeleccionada.ForeColor = Color.White;
         }
 
-        public void setColorCampos(Color monstruosJ1, Color hechizosJ1, Color monstruosJ2, Color hechizosJ2)
-        {
-            jugador1Monstruo1.BackColor = monstruosJ1;
-            jugador1Monstruo2.BackColor = monstruosJ1;
-            jugador1Monstruo3.BackColor = monstruosJ1;
-            jugador1Monstruo4.BackColor = monstruosJ1;
-            jugador1Monstruo5.BackColor = monstruosJ1;
-            jugador1HT1.BackColor = hechizosJ1;
-            jugador1HT2.BackColor = hechizosJ1;
-            jugador1HT3.BackColor = hechizosJ1;
-            jugador1HT4.BackColor = hechizosJ1;
-            jugador1HT5.BackColor = hechizosJ1;
+        private DataGridView HechizosTrampasJ1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridView MonsrtuosJ1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridView HechizosTrampasJ2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private DataGridView MonstruosJ2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private DataGridView CementerioJ1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private DataGridView CementerioJ2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
 
-            jugador2Monstruo1.BackColor = monstruosJ2;
-            jugador2Monstruo2.BackColor = monstruosJ2;
-            jugador2Monstruo3.BackColor = monstruosJ2;
-            jugador2Monstruo4.BackColor = monstruosJ2;
-            jugador2Monstruo5.BackColor = monstruosJ2;
-            jugador2HT1.BackColor = hechizosJ2;
-            jugador2HT2.BackColor = hechizosJ2;
-            jugador2HT3.BackColor = hechizosJ2;
-            jugador2HT4.BackColor = hechizosJ2;
-            jugador2HT5.BackColor = hechizosJ2;
-        }
-
-        #region setter de imagenes de picturebox del campo
-        public void setImagenJugador1Monstruo1(string imagen)
+        public DataGridView getDataGridHechizosTrampasJ1()
         {
-            jugador1Monstruo1.Image = Image.FromFile(imagen);
+            return HechizosTrampasJ1;
         }
-        public void setImagenJugador1Monstruo2(string imagen)
+        public DataGridView getDataGridHechizosTrampasJ2()
         {
-            jugador1Monstruo2.Image = Image.FromFile(imagen);
+            return HechizosTrampasJ2;
         }
-        public void setImagenJugador1Monstruo3(string imagen)
+        public DataGridView getDataGridMonstruosJ1()
         {
-            jugador1Monstruo3.Image = Image.FromFile(imagen);
+            return MonsrtuosJ1;
         }
-        public void setImagenJugador1Monstruo4(string imagen)
+        public DataGridView getDataGridMonstruosJ2()
         {
-            jugador1Monstruo4.Image = Image.FromFile(imagen);
+            return MonstruosJ2;
         }
-        public void setImagenJugador1Monstruo5(string imagen)
+        public DataGridView getDataGridCementerioJ1()
         {
-            jugador1Monstruo5.Image = Image.FromFile(imagen);
+            return CementerioJ1;
         }
-        public void setImagenJugador1HT1(string imagen)
+        public DataGridView getDataGridCementerioJ2()
         {
-            jugador1HT1.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador1HT2(string imagen)
-        {
-            jugador1HT2.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador1HT3(string imagen)
-        {
-            jugador1HT3.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador1HT4(string imagen)
-        {
-            jugador1HT4.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador1HT5(string imagen)
-        {
-            jugador1HT5.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2Monstruo1(string imagen)
-        {
-            jugador2Monstruo1.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2Monstruo2(string imagen)
-        {
-            jugador2Monstruo2.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2Monstruo3(string imagen)
-        {
-            jugador2Monstruo3.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2Monstruo4(string imagen)
-        {
-            jugador2Monstruo4.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2Monstruo5(string imagen)
-        {
-            jugador2Monstruo5.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2HT1(string imagen)
-        {
-            jugador2HT1.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2HT2(string imagen)
-        {
-            jugador2HT2.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2HT3(string imagen)
-        {
-            jugador2HT3.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2HT4(string imagen)
-        {
-            jugador2HT4.Image = Image.FromFile(imagen);
-        }
-        public void setImagenJugador2HT5(string imagen)
-        {
-            jugador2HT5.Image = Image.FromFile(imagen);
+            return CementerioJ2;
         }
 
-        #endregion
+        private Button botonSiguienteFase;
     }
 
 }

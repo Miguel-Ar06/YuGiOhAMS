@@ -54,54 +54,85 @@ namespace Yu_Gi_Oh_AMS
 
     public partial class Juego : Form
     {
+        private WaveOutEvent reproductor = new WaveOutEvent();
+
+        private Jugador jugador1;
+        private DataGridView manoJ1;
+        private DataGridView monstruosJ1;
+        private DataGridView hechizosYTrampasJ1;
+        private DataGridView cementerioJ1;
+
+        private Jugador jugador2;
+        private DataGridView manoJ2;
+        private DataGridView monstruosJ2;
+        private DataGridView hechizosYTrampasJ2;
+        private DataGridView cementerioJ2;
+
+        private EstadoDelJuego estadoDelJuego;
+        private int turno = 0;
+
         public Juego()
         {
             InitializeComponent();
         }
-
-        public WaveOutEvent reproductor = new WaveOutEvent();
 
         private void Juego_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        Jugador jugador1;
-        Jugador jugador2;
-        DataGridView manoJugador1;
-        DataGridView manoJugador2;
-        EstadoDelJuego estadoDelJuego;
-
-        int turno = 0;
-
-
         private void Juego_Load(object sender, EventArgs e)
         {
-
             string rutaDeLaAplicacion = AppDomain.CurrentDomain.BaseDirectory;
             string rutaDelAudio = Path.Combine(rutaDeLaAplicacion, "Resources", "Yu Gi Oh! Japanese OST Yugi's Theme.wav");
 
-            reproductor.PlaybackStopped += reproductor_ReproduccionTerminada;
+            reproductor.PlaybackStopped += Reproductor_ReproduccionTerminada;
             AudioFileReader archivoDeAudio = new AudioFileReader(rutaDelAudio);
             reproductor.Init(archivoDeAudio);
             reproductor.Play();
 
             estadoDelJuego = new EstadoDelJuego();
 
-            manoJugador1 = getDataGridManoJ1();
-            manoJugador1.RowHeadersVisible = false;
-            manoJugador1.ColumnHeadersVisible = false;
+            manoJ1 = getDataGridManoJ1();
+            monstruosJ1 = getDataGridMonstruosJ1();
+            hechizosYTrampasJ1 = getDataGridHechizosTrampasJ1();
+            CementerioJ1 = getDataGridCementerioJ1();
 
-            manoJugador2 = getDataGridManoJ2();
-            manoJugador2.RowHeadersVisible = false;
-            manoJugador2.ColumnHeadersVisible = false;
+            manoJ2 = getDataGridManoJ2();
 
-            // lista de clases con modelos de cartas
-            #region cartas inicializadas
-            BindingList<Type> todasLasCartas = new BindingList<Type>
+            BindingList<Type> todasLasCartas = InicializarCartas();
+
+            jugador1 = new Jugador(1, "Jugador 1", true);
+            jugador2 = new Jugador(2, "Jugador 2", false);
+            actualizarBarraVidaJ1(jugador1.lifePoints);
+            actualizarBarraVidaJ2(jugador2.lifePoints);
+
+            LlenarMazos(jugador1, todasLasCartas);
+            LlenarMazos(jugador2, todasLasCartas);
+
+            RepartirCartasIniciales(jugador1);
+            RepartirCartasIniciales(jugador2);
+
+            actualizarManos();
+
+            estadoDelJuego.jugando = true;
+            setColorFases(estadoDelJuego);
+        }
+
+        private DataGridView ConfigurarDataGridView()
+        {
+            DataGridView dataGridView = new DataGridView
             {
+                RowHeadersVisible = false,
+                ColumnHeadersVisible = false
+            };
+            return dataGridView;
+        }
 
-                // monstruos
+        private BindingList<Type> InicializarCartas()
+        {
+            return new BindingList<Type>
+            {
                 typeof(DragonDeFuego),
                 typeof(CaballeroOscuro),
                 typeof(GuerreroRelampago),
@@ -119,199 +150,90 @@ namespace Yu_Gi_Oh_AMS
                 typeof(SabioDeLosSecretos),
                 typeof(DemonioMenor),
                 typeof(TigreBlanco),
-
-                // hechizos
                 typeof(TormentaRelampago),
                 typeof(RecargaMagica),
                 typeof(EspadaDestino),
                 typeof(CuracionSuprema),
                 typeof(ControlMental),
-
-                // trampas
                 typeof(MuroDefensa),
                 typeof(EspejoFuerza),
-                typeof(RefuerzoDefensivo),
+                typeof(RefuerzoDefensivo)
             };
+        }
 
-            #endregion
-
-            // inicializar jugadores
-            jugador1 = new Jugador(1, "Jugador 1", true);
-            jugador2 = new Jugador(2, "Jugador 2", false);
-            actualizarBarraVidaJ1(jugador1.lifePoints);
-            actualizarBarraVidaJ2(jugador2.lifePoints);
-
-            // llenar los mazos con 60 cartas aleatorias para cada jugador
+        private void LlenarMazos(Jugador jugador, BindingList<Type> todasLasCartas)
+        {
+            Random random = new Random();
             for (int i = 0; i < 60; i++)
             {
-                Random random = new Random();
                 int indiceAleatorio = random.Next(0, todasLasCartas.Count);
-
                 Type tipoDeCarta = todasLasCartas[indiceAleatorio];
                 Carta carta = (Carta)Activator.CreateInstance(tipoDeCarta);
-
-                jugador1.mazo.apilar(carta);
+                jugador.mazo.apilar(carta);
             }
-            for (int i = 0; i < 60; i++)
-            {
-                Random random = new Random();
-                int indiceAleatorio = random.Next(0, todasLasCartas.Count);
+        }
 
-                Type tipoDeCarta = todasLasCartas[indiceAleatorio];
-                Carta carta = (Carta)Activator.CreateInstance(tipoDeCarta);
-
-                jugador2.mazo.apilar(carta);
-            }
-
-            // repartir 5 cartas a cada jugador
+        private void RepartirCartasIniciales(Jugador jugador)
+        {
             for (int i = 0; i < 5; i++)
             {
-                Carta carta = jugador1.mazo.desapilar();
-                jugador1.mano.agregar(carta);
+                Carta carta = jugador.mazo.desapilar();
+                jugador.mano.agregar(carta);
             }
-            setLabelMazoJ1(jugador1.mazo.tamano);
-
-            for (int i = 0; i < 5; i++)
-            {
-                Carta carta = jugador2.mazo.desapilar();
-                jugador2.mano.agregar(carta);
-            }
-            setLabelMazoJ2(jugador2.mazo.tamano);
-
-            actualizarManos();
-
-            //comenzar el juego
-            estadoDelJuego.jugando = true;
-            setColorFases(estadoDelJuego);
+            if (jugador.numero == 1)
+                setLabelMazoJ1(jugador.mazo.tamano);
+            else
+                setLabelMazoJ2(jugador.mazo.tamano);
         }
 
         public void actualizarManos()
         {
-            // llenar los datagrid con las imagenes de la mano de los jugadores
+            ConfigurarDataGridViewManos(manoJ1, jugador1);
+            ConfigurarDataGridViewManos(manoJ2, jugador2);
+        }
+
+        private void ConfigurarDataGridViewManos(DataGridView dataGridView, Jugador jugador)
+        {
             int cartaAlto = 75;
             int cartaAncho = 52;
 
+            dataGridView.Columns.Clear();
+            dataGridView.Rows.Clear();
 
-            manoJugador1.Columns.Clear();
-            manoJugador1.Rows.Clear();
-            manoJugador2.Columns.Clear();
-            manoJugador2.Rows.Clear();
-
-            // agregar columnas para cada carta del jugador
-            for (int i = 0; i < jugador1.mano.tamano; i++)
+            for (int i = 0; i < jugador.mano.tamano; i++)
             {
-                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-                imageColumn.HeaderText = $"Carta {i + 1}";
-                imageColumn.Name = $"CartaImage{i + 1}";
-                imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
-                manoJugador1.Columns.Add(imageColumn);
-                manoJugador1.Columns[i].Width = cartaAncho;
-
+                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
+                {
+                    HeaderText = $"Carta {i + 1}",
+                    Name = $"CartaImage{i + 1}",
+                    ImageLayout = DataGridViewImageCellLayout.Stretch
+                };
+                dataGridView.Columns.Add(imageColumn);
+                dataGridView.Columns[i].Width = cartaAncho;
             }
 
-            for (int i = 0; i < jugador2.mano.tamano; i++)
+            dataGridView.Rows.Add();
+            dataGridView.Rows[0].Height = cartaAlto;
+
+            for (int i = 0; i < jugador.mano.tamano; i++)
             {
-                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-                imageColumn.HeaderText = $"Carta {i + 1}";
-                imageColumn.Name = $"CartaImage{i + 1}";
-                imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
-                manoJugador2.Columns.Add(imageColumn);
-                manoJugador2.Columns[i].Width = cartaAncho;
+                Carta carta = jugador.mano.obtenerDatoPorIndice(i);
+                string imagenPath = carta.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso");
+
+                try
+                {
+                    Image image = Image.FromFile(imagenPath);
+                    dataGridView.Rows[0].Cells[i].Value = image;
+                    dataGridView.Rows[0].Cells[i].Tag = carta;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show($"Error al cargar imagen para {carta.nombre}");
+                }
             }
-
-            // agregar una sola fila para cada datagrid
-            manoJugador1.Rows.Add();
-            manoJugador2.Rows.Add();
-
-            manoJugador1.Rows[0].Height = cartaAlto;
-            manoJugador2.Rows[0].Height = cartaAlto;
-
-            Image image;
-            Carta carta;
-
-            // poblar esa fila con la imagen de una carta por columna
-            for (int i = 0; i < jugador1.mano.tamano; i++)
-            {
-                //Pero habla demonio
-                carta = jugador1.mano.obtenerDatoPorIndice(i);
-                if (carta.imagen == null )
-                {
-                    image = Image.FromFile(jugador1.mano.obtenerDatoPorIndice(i).imagenReverso);
-                }
-                else
-                {
-                    try
-                    {
-                        image = Image.FromFile(jugador1.mano.obtenerDatoPorIndice(i).imagen);
-                    }
-                    catch (Exception error)
-                    {
-                        MessageBox.Show("Error al Cargar imagen para " + jugador1.mano.obtenerDatoPorIndice(i).nombre);
-                        image = Image.FromFile(jugador1.mano.obtenerDatoPorIndice(i).imagenReverso);
-                    }
-                }
-                manoJugador1.Rows[0].Cells[i].Value = image;
-                manoJugador1.Rows[0].Cells[i].Tag = carta;
-
-            }
-
-            for (int i = 0; i < jugador2.mano.tamano; i++)
-            {
-                carta = jugador2.mano.obtenerDatoPorIndice(i);
-                if (jugador2.mano.obtenerDatoPorIndice(i).imagen == null || jugador2.mano.obtenerDatoPorIndice(i) == null)
-                {
-                    image = Image.FromFile(jugador2.mano.obtenerDatoPorIndice(i).imagenReverso);
-                }
-                else
-                {
-                    try
-                    {
-                        image = Image.FromFile(jugador2.mano.obtenerDatoPorIndice(i).imagen);
-                    }
-                    catch (Exception error)
-                    {
-                        MessageBox.Show("Error al Cargar imagen para " + jugador2.mano.obtenerDatoPorIndice(i).nombre);
-                        image = Image.FromFile(jugador2.mano.obtenerDatoPorIndice(i).imagenReverso);
-                    }
-                }
-                manoJugador2.Rows[0].Cells[i].Value = image;
-                manoJugador2.Rows[0].Cells[i].Tag = carta;
-            }
-
         }
 
-        public void actualizarCampo()
-        {
-            // asignarle a cada picture box las imagenes correspondientes segun el campo del jugador
-
-            setImagenJugador1Monstruo1(jugador1.campo.monstruos.extraerPorIndice(0).imagen);
-            setImagenJugador1Monstruo2(jugador1.campo.monstruos.extraerPorIndice(1).imagen);
-            setImagenJugador1Monstruo3(jugador1.campo.monstruos.extraerPorIndice(2).imagen);
-            setImagenJugador1Monstruo4(jugador1.campo.monstruos.extraerPorIndice(3).imagen);
-            setImagenJugador1Monstruo5(jugador1.campo.monstruos.extraerPorIndice(4).imagen);
-
-            setImagenJugador1HT1(jugador1.campo.hechizosYTrampas.extraerPorIndice(0).imagen);
-            setImagenJugador1HT2(jugador1.campo.hechizosYTrampas.extraerPorIndice(1).imagen);
-            setImagenJugador1HT3(jugador1.campo.hechizosYTrampas.extraerPorIndice(2).imagen);
-            setImagenJugador1HT4(jugador1.campo.hechizosYTrampas.extraerPorIndice(3).imagen);
-            setImagenJugador1HT5(jugador1.campo.hechizosYTrampas.extraerPorIndice(4).imagen);
-
-            setImagenJugador2Monstruo1(jugador2.campo.monstruos.extraerPorIndice(0).imagen);
-            setImagenJugador2Monstruo2(jugador2.campo.monstruos.extraerPorIndice(1).imagen);
-            setImagenJugador2Monstruo3(jugador2.campo.monstruos.extraerPorIndice(2).imagen);
-            setImagenJugador2Monstruo4(jugador2.campo.monstruos.extraerPorIndice(3).imagen);
-            setImagenJugador2Monstruo5(jugador2.campo.monstruos.extraerPorIndice(4).imagen);
-
-            setImagenJugador2HT1(jugador2.campo.hechizosYTrampas.extraerPorIndice(0).imagen);
-            setImagenJugador2HT2(jugador2.campo.hechizosYTrampas.extraerPorIndice(1).imagen);
-            setImagenJugador2HT3(jugador2.campo.hechizosYTrampas.extraerPorIndice(2).imagen);
-            setImagenJugador2HT4(jugador2.campo.hechizosYTrampas.extraerPorIndice(3).imagen);
-            setImagenJugador2HT5(jugador2.campo.hechizosYTrampas.extraerPorIndice(4).imagen);
-
-        }
-
-        // reproducir la musica de nuevo si llega a su fin
-        private void reproductor_ReproduccionTerminada(object sender, StoppedEventArgs e)
+        private void Reproductor_ReproduccionTerminada(object sender, StoppedEventArgs e)
         {
             string rutaDeLaAplicacion = AppDomain.CurrentDomain.BaseDirectory;
             string rutaDelAudio = Path.Combine(rutaDeLaAplicacion, "Resources", "Yu Gi Oh! Japanese OST Yugi's Theme.wav");
@@ -327,19 +249,107 @@ namespace Yu_Gi_Oh_AMS
 
         private void jugador1Mano_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Carta cartaSeleccionada = (Carta)manoJugador1.Rows[0].Cells[e.ColumnIndex].Tag;
+            Carta cartaSeleccionada = (Carta)manoJ1.Rows[0].Cells[e.ColumnIndex].Tag;
             mostrarInfoCarta(cartaSeleccionada);
             reiniciarColorTextos();
         }
 
         private void jugador2Mano_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Carta cartaSeleccionada = (Carta)manoJugador2.Rows[0].Cells[e.ColumnIndex].Tag;
+            Carta cartaSeleccionada = (Carta)manoJ2.Rows[0].Cells[e.ColumnIndex].Tag;
             mostrarInfoCarta(cartaSeleccionada);
             reiniciarColorTextos();
         }
 
-        private void botonSiguienteFase_Click(object sender, EventArgs e)
+        private void jugador1Mano_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (turno % 2 == 0 && (estadoDelJuego.fase == 2 || estadoDelJuego.fase == 4))
+            {
+                Carta cartaSeleccionada = (Carta)manoJ1.Rows[0].Cells[e.ColumnIndex].Tag;
+                if (cartaSeleccionada is Monstruo monstruo && jugador1.campo.monstruos.tamano < 5 && monstruosJ1.Columns.Count < 5)
+                {
+                    jugador1.campo.agregarMonstruo(monstruo);
+                    monstruo.puedeAtacar = false;
+                    jugador1.mano.eliminarPorDato(monstruo);
+                    monstruosJ1.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Monstruo {monstruosJ1.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(monstruo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                else if (cartaSeleccionada is Hechizo hechizo && jugador1.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ1.Columns.Count < 5)
+                {
+                    jugador1.campo.agregarHechizoOTrampa(hechizo);
+                    jugador1.mano.eliminarPorDato(hechizo);
+                    hechizosYTrampasJ1.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ1.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(hechizo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                else if (cartaSeleccionada is Trampa trampa && jugador1.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ1.Columns.Count < 5)
+                {
+                    jugador1.campo.agregarHechizoOTrampa(trampa);
+                    jugador1.mano.eliminarPorDato(trampa);
+                    hechizosYTrampasJ1.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ1.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(trampa.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                actualizarManos();
+                //actualizarCampo();
+            }
+        }
+
+        private void jugador2Mano_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (turno % 2 != 0 && (estadoDelJuego.fase == 2 || estadoDelJuego.fase == 4))
+            {
+                Carta cartaSeleccionada = (Carta)manoJ2.Rows[0].Cells[e.ColumnIndex].Tag;
+                if (cartaSeleccionada is Monstruo monstruo && jugador2.campo.monstruos.tamano < 5 && monstruosJ2.Columns.Count < 5)
+                {
+                    jugador2.campo.agregarMonstruo(monstruo);
+                    monstruo.puedeAtacar = false;
+                    jugador2.mano.eliminarPorDato(monstruo);
+                    monstruosJ2.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Monstruo {monstruosJ2.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(monstruo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                else if (cartaSeleccionada is Hechizo hechizo && jugador2.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ2.Columns.Count < 5)
+                {
+                    jugador2.campo.agregarHechizoOTrampa(hechizo);
+                    jugador2.mano.eliminarPorDato(hechizo);
+                    hechizosYTrampasJ2.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ2.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(hechizo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                else if (cartaSeleccionada is Trampa trampa && jugador2.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ2.Columns.Count < 5)
+                {
+                    jugador2.campo.agregarHechizoOTrampa(trampa);
+                    jugador2.mano.eliminarPorDato(trampa);
+                    hechizosYTrampasJ2.Columns.Add(new DataGridViewImageColumn
+                    {
+                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ2.Columns.Count + 1}",
+                        ImageLayout = DataGridViewImageCellLayout.Zoom,
+                        Image = Image.FromFile(trampa.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
+                    });
+                }
+                actualizarManos();
+                //actualizarCampo();
+            }
+        }
+
+        private void botonSiguienteFase_Click_1(object sender, EventArgs e)
         {
             estadoDelJuego.siguienteFase();
             setColorFases(estadoDelJuego);
@@ -348,106 +358,35 @@ namespace Yu_Gi_Oh_AMS
             {
                 case 0:
                     turno++;
-
                     if (turno % 2 == 0)
                     {
                         MessageBox.Show("Turno J1: Fase de robo");
-
                         jugador1.robarCarta();
                         setLabelMazoJ1(jugador1.mazo.tamano);
-                        actualizarManos();
                     }
                     else
                     {
                         MessageBox.Show("Turno J2: Fase de robo");
-
                         jugador2.robarCarta();
                         setLabelMazoJ2(jugador2.mazo.tamano);
-                        actualizarManos();
                     }
-
+                    actualizarManos();
                     break;
                 case 1:
                     MessageBox.Show("Fase inicial");
                     break;
                 case 2:
                     MessageBox.Show("Fase de preparacion 1");
-                    if (turno % 2 == 0)
-                    {
-                        setColorCampos(Color.MidnightBlue, Color.MidnightBlue, Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32));
-                    }
-                    else
-                    {
-                        setColorCampos(Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32), Color.MidnightBlue, Color.MidnightBlue);
-                    }
                     break;
                 case 3:
                     MessageBox.Show("Fase batalla");
-                    if (turno % 2 == 0)
-                    {
-                        setColorCampos(Color.MidnightBlue, Color.MidnightBlue, Color.Firebrick, Color.FromArgb(32, 32, 32));
-                    }
-                    else
-                    {
-                        setColorCampos(Color.Firebrick, Color.FromArgb(32, 32, 32), Color.MidnightBlue, Color.MidnightBlue);
-                    }
                     break;
                 case 4:
                     MessageBox.Show("Fase de preparacion 2");
-                    if (turno % 2 == 0)
-                    {
-                        setColorCampos(Color.MidnightBlue, Color.MidnightBlue, Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32));
-                    }
-                    else
-                    {
-                        setColorCampos(Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32), Color.MidnightBlue, Color.MidnightBlue);
-                    }
                     break;
                 case 5:
-                    setColorCampos(Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32), Color.FromArgb(32, 32, 32));
                     MessageBox.Show("Fase final");
-                    if (turno % 2 == 0)
-                    {
-                        // dejar solo 6 cartas en mano j1
-                    }
-                    else
-                    {
-                        // dejar solo 6 cartas en mano j2
-                    }
                     break;
-            }
-        }
-
-        private void jugador1Mano_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (turno % 2 == 0)
-            {
-                if (estadoDelJuego.fase == 2)
-                {
-                    // agregar cartas a su area respectiva del campo
-                    Carta cartaSeleccionada = (Carta)manoJugador1.Rows[0].Cells[e.ColumnIndex].Tag;
-                    if (cartaSeleccionada is Monstruo monstruo && jugador1.campo.monstruos.tamano < 5)
-                    {
-                        jugador1.campo.agregarMonstruo(monstruo);
-                        monstruo.puedeAtacar = false;
-                        jugador1.mano.eliminarPorDato(monstruo);
-                        actualizarManos();
-                    }
-                    else if (cartaSeleccionada is Hechizo hechizo && jugador1.campo.hechizosYTrampas.tamano < 5)
-                    {
-                        jugador1.campo.agregarHechizoOTrampa(hechizo);
-                        jugador1.mano.eliminarPorDato(hechizo);
-                        actualizarManos();
-                    }
-                    else if (cartaSeleccionada is Trampa trampa && jugador1.campo.hechizosYTrampas.tamano < 5)
-                    {
-                        jugador1.campo.agregarHechizoOTrampa(trampa);
-                        jugador1.mano.eliminarPorDato(trampa);
-                        actualizarManos();
-                    }
-
-                    actualizarCampo();
-                }
             }
         }
     }

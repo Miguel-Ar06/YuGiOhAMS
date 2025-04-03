@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|c:\\users\\nombr\\onedrive\\documentos\\code\\tarea\\yugiohams\\yugioh\\yugioh\\pantallabienvenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|solutionrelative:yugioh\\pantallabienvenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|c:\\users\\nombr\\onedrive\\documentos\\code\\tarea\\yugiohams\\yugioh\\yugioh\\pantallabienvenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|solutionrelative:yugioh\\pantallabienvenida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|c:\\users\\nombr\\onedrive\\documentos\\code\\tarea\\yugiohams\\yugioh\\yugioh\\pantallabienvenida.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|solutionrelative:yugioh\\pantallabienvenida.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|c:\\users\\nombr\\onedrive\\documentos\\code\\tarea\\yugiohams\\yugioh\\yugioh\\duelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8519BDE-F13F-4036-9D94-C5E43C9CFACB}|YuGiOh\\YuGiOh.csproj|solutionrelative:yugioh\\duelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Duelo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\Duelo.cs",
+              "RelativeDocumentMoniker": "YuGiOh\\Duelo.cs",
+              "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\Duelo.cs [Design]",
+              "RelativeToolTip": "YuGiOh\\Duelo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T00:44:14.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PantallaBienvenida.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.Designer.cs",
+              "RelativeDocumentMoniker": "YuGiOh\\PantallaBienvenida.Designer.cs",
+              "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.Designer.cs",
+              "RelativeToolTip": "YuGiOh\\PantallaBienvenida.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T00:13:36.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PantallaBienvenida.cs",
+              "DocumentMoniker": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.cs",
+              "RelativeDocumentMoniker": "YuGiOh\\PantallaBienvenida.cs",
+              "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.cs*",
+              "RelativeToolTip": "YuGiOh\\PantallaBienvenida.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T00:12:31.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PantallaBienvenida.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.cs",
+              "RelativeDocumentMoniker": "YuGiOh\\PantallaBienvenida.cs",
+              "ToolTip": "C:\\Users\\nombr\\OneDrive\\Documentos\\code\\tarea\\YuGiOhAMS\\YuGiOh\\YuGiOh\\PantallaBienvenida.cs [Design]*",
+              "RelativeToolTip": "YuGiOh\\PantallaBienvenida.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T00:11:45.126Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

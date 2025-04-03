@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AgujeroOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AgujeroOscuro.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AnilloDeFuerza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AnilloDeFuerza.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AsaltanteNocturno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AsaltanteNocturno.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtaqueSorpresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtaqueSorpresa.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BrujaDeLaNiebla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BrujaDeLaNiebla.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CaballeroBrillante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CaballeroBrillante.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CaballeroOscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CaballeroOscuro.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CadenasDeSombra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CadenasDeSombra.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CazadorSigiloso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CazadorSigiloso.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CiberdragonFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CiberdragonFinal.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ControlMental" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ControlMental.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CuracionSuprema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CuracionSuprema.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DemonioMenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DemonioMenor.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DobleGolpe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DobleGolpe.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DragonDeFuego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DragonDeFuego.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DragonDeLava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DragonDeLava.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EscudoMagico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EscudoMagico.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EspadaDelDestino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EspadaDelDestino.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EspejoDeflector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EspejoDeflector.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EspejoDeFuerza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EspejoDeFuerza.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ExplosionArcana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ExplosionArcana.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GolemDeGranito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GolemDeGranito.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GolemDePiedra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GolemDePiedra.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GolpeRetardado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GolpeRetardado.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GuerreroDeLaEspada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GuerreroDeLaEspada.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GuerreroRelampago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GuerreroRelampago.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GuerreroVeloz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GuerreroVeloz.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HadaSanadora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\HadaSanadora.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HollowKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\HollowKnight.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="IlusionProtectora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IlusionProtectora.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Interrupcion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Interrupcion.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LadronFantasma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LadronFantasma.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LoboDelEclipse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LoboDelEclipse.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MagoDeLosVientos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MagoDeLosVientos.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MagoSombrio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MagoSombrio.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MaquinaDeGuerra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MaquinaDeGuerra.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MuroDeDefensa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MuroDeDefensa.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OlaDeCuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OlaDeCuracion.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrisionDimensional" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PrisionDimensional.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RecargaMagica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RecargaMagica.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RefuerzoDefensivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RefuerzoDefensivo.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ResurreccionDelAlma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ResurreccionDelAlma.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RobarDestino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RobarDestino.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RoboDelLadron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RoboDelLadron.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RoboForzado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\RoboForzado.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SabioDeLosSecretos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SabioDeLosSecretos.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SelloDePoder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SelloDePoder.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SerpienteVenenosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SerpienteVenenosa.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SeñueloDeLaConfusion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SeñueloDeLaConfusion.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SustanciaPegajosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SustanciaPegajosa.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TigreBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TigreBlanco.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Torbellino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Torbellino.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TormentaRelampago" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TormentaRelampago.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TortugaEscudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TortugaEscudo.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TrampaDeArena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TrampaDeArena.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="VenganzaFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\VenganzaFinal.jpeg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YuGiOhCartaReverso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\YuGiOhCartaReverso.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

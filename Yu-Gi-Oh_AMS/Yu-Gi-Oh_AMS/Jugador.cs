@@ -114,5 +114,14 @@ namespace Yu_Gi_Oh_AMS
             mazo.revolver();
         }
 
+        public void SetPuedeInvocar(bool invocar)
+        {
+            this.puedeInvocar = invocar;
+        }
+
+        public bool GetPuedeInvocar()
+        {
+            return this.puedeInvocar;
+        }
     }
 }

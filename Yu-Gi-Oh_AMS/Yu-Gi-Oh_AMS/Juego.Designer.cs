@@ -854,7 +854,8 @@ namespace Yu_Gi_Oh_AMS
             {
                 infoCarta.Text = "Nombre \r\nATK: \r\nDEF:";
                 descripcionCartaSeleccionada.Text = "Descripcion y efectos de la carta";
-                cartaSeleccionadaZoom.Image = Image.FromFile(cartaSeleccionada.imagenReverso);
+                // Asegúrate de tener una imagen por defecto o manejar el caso de null adecuadamente
+                cartaSeleccionadaZoom.Image = Image.FromFile("YuGiOhCartaReverso.png");
                 infoCarta.ForeColor = Color.Black;
                 descripcionCartaSeleccionada.ForeColor = Color.White;
                 return;
@@ -875,6 +876,7 @@ namespace Yu_Gi_Oh_AMS
             descripcionCartaSeleccionada.ForeColor = Color.White;
             cartaSeleccionadaZoom.Image = Image.FromFile(cartaSeleccionada.imagen);
         }
+
 
         /* 
         */

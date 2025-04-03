@@ -74,6 +74,7 @@ namespace Yu_Gi_Oh_AMS
         public Juego()
         {
             InitializeComponent();
+            this.TopMost = false;
         }
 
         private void Juego_FormClosing(object sender, FormClosingEventArgs e)
@@ -186,52 +187,6 @@ namespace Yu_Gi_Oh_AMS
                 setLabelMazoJ2(jugador.mazo.tamano);
         }
 
-        public void actualizarManos()
-        {
-            ConfigurarDataGridViewManos(manoJ1, jugador1);
-            ConfigurarDataGridViewManos(manoJ2, jugador2);
-        }
-
-        private void ConfigurarDataGridViewManos(DataGridView dataGridView, Jugador jugador)
-        {
-            int cartaAlto = 75;
-            int cartaAncho = 52;
-
-            dataGridView.Columns.Clear();
-            dataGridView.Rows.Clear();
-
-            for (int i = 0; i < jugador.mano.tamano; i++)
-            {
-                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
-                {
-                    HeaderText = $"Carta {i + 1}",
-                    Name = $"CartaImage{i + 1}",
-                    ImageLayout = DataGridViewImageCellLayout.Stretch
-                };
-                dataGridView.Columns.Add(imageColumn);
-                dataGridView.Columns[i].Width = cartaAncho;
-            }
-
-            dataGridView.Rows.Add();
-            dataGridView.Rows[0].Height = cartaAlto;
-
-            for (int i = 0; i < jugador.mano.tamano; i++)
-            {
-                Carta carta = jugador.mano.obtenerDatoPorIndice(i);
-                string imagenPath = carta.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso");
-
-                try
-                {
-                    Image image = Image.FromFile(imagenPath);
-                    dataGridView.Rows[0].Cells[i].Value = image;
-                    dataGridView.Rows[0].Cells[i].Tag = carta;
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show($"Error al cargar imagen para {carta.nombre}");
-                }
-            }
-        }
 
         private void Reproductor_ReproduccionTerminada(object sender, StoppedEventArgs e)
         {
@@ -263,47 +218,27 @@ namespace Yu_Gi_Oh_AMS
 
         private void jugador1Mano_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (turno % 2 == 0 && (estadoDelJuego.fase == 2 || estadoDelJuego.fase == 4))
+            if (turno % 2 == 0 && (estadoDelJuego.fase == 2 || estadoDelJuego.fase == 4)) // Fase de preparación
             {
                 Carta cartaSeleccionada = (Carta)manoJ1.Rows[0].Cells[e.ColumnIndex].Tag;
-                if (cartaSeleccionada is Monstruo monstruo && jugador1.campo.monstruos.tamano < 5 && monstruosJ1.Columns.Count < 5)
+
+                if (cartaSeleccionada is Monstruo monstruo)
                 {
-                    jugador1.campo.agregarMonstruo(monstruo);
-                    monstruo.puedeAtacar = false;
-                    jugador1.mano.eliminarPorDato(monstruo);
-                    monstruosJ1.Columns.Add(new DataGridViewImageColumn
-                    {
-                        HeaderText = $"Monstruo {monstruosJ1.Columns.Count + 1}",
-                        ImageLayout = DataGridViewImageCellLayout.Zoom,
-                        Image = Image.FromFile(monstruo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
-                    });
+                    InvocarMonstruo(jugador1, monstruo, monstruosJ1);
+                    actualizarManos();
+                    actualizarCampoMonstruosJ1();
                 }
-                else if (cartaSeleccionada is Hechizo hechizo && jugador1.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ1.Columns.Count < 5)
+                else if (cartaSeleccionada is Hechizo hechizo)
                 {
-                    jugador1.campo.agregarHechizoOTrampa(hechizo);
-                    jugador1.mano.eliminarPorDato(hechizo);
-                    hechizosYTrampasJ1.Columns.Add(new DataGridViewImageColumn
-                    {
-                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ1.Columns.Count + 1}",
-                        ImageLayout = DataGridViewImageCellLayout.Zoom,
-                        Image = Image.FromFile(hechizo.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
-                    });
+                    // Lógica para hechizos (si es necesario)
                 }
-                else if (cartaSeleccionada is Trampa trampa && jugador1.campo.hechizosYTrampas.tamano < 5 && hechizosYTrampasJ1.Columns.Count < 5)
+                else if (cartaSeleccionada is Trampa trampa)
                 {
-                    jugador1.campo.agregarHechizoOTrampa(trampa);
-                    jugador1.mano.eliminarPorDato(trampa);
-                    hechizosYTrampasJ1.Columns.Add(new DataGridViewImageColumn
-                    {
-                        HeaderText = $"Hechizo/Trampa {hechizosYTrampasJ1.Columns.Count + 1}",
-                        ImageLayout = DataGridViewImageCellLayout.Zoom,
-                        Image = Image.FromFile(trampa.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso"))
-                    });
+                    // Lógica para trampas (si es necesario)
                 }
-                actualizarManos();
-                //actualizarCampo();
             }
         }
+
 
         private void jugador2Mano_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -349,6 +284,142 @@ namespace Yu_Gi_Oh_AMS
             }
         }
 
+        private void InvocarMonstruo(Jugador jugador, Monstruo monstruo, DataGridView gridMonstruos)
+        {
+            if (jugador.GetPuedeInvocar())
+            {
+                return;
+            }
+            // Verificar si hay espacio en el campo
+            if (jugador.campo.monstruos.tamano >= 5)
+            {
+                MessageBox.Show(this, "Ya tienes 5 monstruos en el campo. No puedes invocar más.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Mover de la mano al campo
+            jugador.SetPuedeInvocar(false);
+            jugador.mano.eliminarPorDato(monstruo);
+            jugador.campo.agregarMonstruo(monstruo);
+            monstruo.puedeAtacar = false; // No puede atacar el turno que es invocado
+            monstruo.enMano = false;
+            monstruo.enCampo = true;
+
+            // Ejecutar efectos al ser invocado
+            monstruo.AlSerInvocado(jugador);
+
+            // Actualizar la interfaz
+            AgregarMonstruoAGrid(monstruo, gridMonstruos);
+            actualizarManos(); // Actualizar la mano después de eliminar la carta
+        }
+
+        public void actualizarManos()
+        {
+            ConfigurarDataGridViewManos(manoJ1, jugador1);
+            ConfigurarDataGridViewManos(manoJ2, jugador2);
+        }
+
+        private void ConfigurarDataGridViewManos(DataGridView dataGridView, Jugador jugador)
+        {
+            int cartaAlto = 75;
+            int cartaAncho = 52;
+
+            dataGridView.Columns.Clear();
+            dataGridView.Rows.Clear();
+
+            for (int i = 0; i < jugador.mano.tamano; i++)
+            {
+                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
+                {
+                    HeaderText = $"Carta {i + 1}",
+                    Name = $"CartaImage{i + 1}",
+                    ImageLayout = DataGridViewImageCellLayout.Stretch
+                };
+                dataGridView.Columns.Add(imageColumn);
+                dataGridView.Columns[i].Width = cartaAncho;
+            }
+
+            dataGridView.Rows.Add();
+            dataGridView.Rows[0].Height = cartaAlto;
+
+            for (int i = 0; i < jugador.mano.tamano; i++)
+            {
+                Carta carta = jugador.mano.obtenerDatoPorIndice(i);
+                if (carta != null)
+                {
+                    string imagenPath = carta.imagen ?? Carta.ObtenerRutaImagen("YuGiOhCartaReverso");
+                    try
+                    {
+                        Image image = Image.FromFile(imagenPath);
+                        dataGridView.Rows[0].Cells[i].Value = image;
+                        dataGridView.Rows[0].Cells[i].Tag = carta;
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show($"Error al cargar imagen para {carta.nombre}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error: Carta no encontrada.");
+                }
+            }
+        }
+
+
+
+
+        private void AgregarMonstruoAGrid(Monstruo monstruo, DataGridView gridMonstruos)
+        {
+            // Configurar la columna de imagen
+            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
+            {
+                ImageLayout = DataGridViewImageCellLayout.Zoom,
+                Width = 80
+            };
+
+            gridMonstruos.Columns.Add(imageColumn);
+
+            // Asegurarse de que haya al menos una fila en el DataGridView
+            if (gridMonstruos.Rows.Count == 0)
+            {
+                gridMonstruos.Rows.Add();
+            }
+
+            int rowIndex = gridMonstruos.Rows.Count - 1;
+
+            try
+            {
+                gridMonstruos.Rows[rowIndex].Cells[gridMonstruos.Columns.Count - 1].Value =
+                    Image.FromFile(monstruo.imagen);
+            }
+            catch
+            {
+                // Si falla la carga de imagen, usar imagen por defecto
+                gridMonstruos.Rows[rowIndex].Cells[gridMonstruos.Columns.Count - 1].Value =
+                    Image.FromFile(Carta.ObtenerRutaImagen("YuGiOhCartaReverso.png"));
+            }
+
+            // Guardar referencia al monstruo en el Tag
+            gridMonstruos.Rows[rowIndex].Cells[gridMonstruos.Columns.Count - 1].Tag = monstruo;
+        }
+
+
+
+
+        private void actualizarCampoMonstruosJ1()
+{
+    monstruosJ1.Columns.Clear();
+    monstruosJ1.Rows.Clear();
+    
+    for (int i = 0; i < jugador1.campo.monstruos.tamano; i++)
+    {
+        Monstruo monstruo = jugador1.campo.monstruos.obtenerDatoPorIndice(i) as Monstruo;
+        AgregarMonstruoAGrid(monstruo, monstruosJ1);
+    }
+}
+
+
         private void botonSiguienteFase_Click_1(object sender, EventArgs e)
         {
             estadoDelJuego.siguienteFase();
@@ -360,32 +431,25 @@ namespace Yu_Gi_Oh_AMS
                     turno++;
                     if (turno % 2 == 0)
                     {
-                        MessageBox.Show("Turno J1: Fase de robo");
                         jugador1.robarCarta();
                         setLabelMazoJ1(jugador1.mazo.tamano);
                     }
                     else
                     {
-                        MessageBox.Show("Turno J2: Fase de robo");
                         jugador2.robarCarta();
                         setLabelMazoJ2(jugador2.mazo.tamano);
                     }
                     actualizarManos();
                     break;
                 case 1:
-                    MessageBox.Show("Fase inicial");
                     break;
                 case 2:
-                    MessageBox.Show("Fase de preparacion 1");
                     break;
                 case 3:
-                    MessageBox.Show("Fase batalla");
                     break;
                 case 4:
-                    MessageBox.Show("Fase de preparacion 2");
                     break;
                 case 5:
-                    MessageBox.Show("Fase final");
                     break;
             }
         }
